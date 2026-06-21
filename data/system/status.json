@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T14:50:28.767Z",
-  "runId": "tw-2026-06-21-2250",
-  "runType": "evening",
+  "generatedAt": "2026-06-21T15:20:35.633Z",
+  "runId": "tw-2026-06-21-2320",
+  "runType": "manual",
   "localAi": {
     "enabled": false,
     "provider": "none",
@@ -35,7 +35,7 @@
       "id": "github-action-time",
       "label": "GitHub Actions update time",
       "status": "pass",
-      "description": "最新 runId: tw-2026-06-21-2250",
+      "description": "最新 runId: tw-2026-06-21-2320",
       "nextAction": "若時間過舊，檢查 Actions schedule 或手動 workflow_dispatch。"
     },
     {
@@ -148,37 +148,37 @@
         "sourceId": "reuters-tech",
         "scope": "source_fetch",
         "message": "fetch failed",
-        "at": "2026-06-21T14:50:28.767Z"
-      },
-      {
-        "sourceId": "tsmc-pr",
-        "scope": "source_fetch",
-        "message": "HTTP 403",
-        "at": "2026-06-21T14:50:28.767Z"
-      },
-      {
-        "sourceId": "eia-today",
-        "scope": "source_fetch",
-        "message": "HTTP 404",
-        "at": "2026-06-21T14:50:28.767Z"
-      },
-      {
-        "sourceId": "trendforce",
-        "scope": "source_fetch",
-        "message": "HTTP 404",
-        "at": "2026-06-21T14:50:28.767Z"
+        "at": "2026-06-21T15:20:35.633Z"
       },
       {
         "sourceId": "nvidia-news",
         "scope": "source_fetch",
         "message": "No parseable articles found",
-        "at": "2026-06-21T14:50:28.767Z"
+        "at": "2026-06-21T15:20:35.633Z"
+      },
+      {
+        "sourceId": "tsmc-pr",
+        "scope": "source_fetch",
+        "message": "HTTP 403",
+        "at": "2026-06-21T15:20:35.633Z"
+      },
+      {
+        "sourceId": "eia-today",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T15:20:35.633Z"
+      },
+      {
+        "sourceId": "trendforce",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T15:20:35.633Z"
       },
       {
         "sourceId": "amd-news",
         "scope": "source_fetch",
         "message": "The operation was aborted due to timeout",
-        "at": "2026-06-21T14:50:28.767Z"
+        "at": "2026-06-21T15:20:35.633Z"
       }
     ]
   }
