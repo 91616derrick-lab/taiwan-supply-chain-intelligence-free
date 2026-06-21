@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-06-21T15:58:48.984Z",
-  "runId": "tw-2026-06-21-2358",
+  "generatedAt": "2026-06-21T15:47:54.060Z",
+  "runId": "tw-2026-06-21-2347",
   "runType": "evening",
   "engine": {
     "mode": "rule_based",
@@ -16,10 +16,10 @@
     "companyImpactCount": 62,
     "companyUniverse": {
       "status": "ok",
-      "totalCompanies": 1942,
-      "twseCount": 1052,
+      "totalCompanies": 1954,
+      "twseCount": 1064,
       "tpexCount": 890,
-      "updatedAt": "2026-06-21T15:58:20.445Z",
+      "updatedAt": "2026-06-21T15:47:29.211Z",
       "sourceUrls": [
         "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2",
         "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4"
@@ -31,49 +31,49 @@
         "sourceId": "reuters-tech",
         "scope": "source_fetch",
         "message": "fetch failed",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       },
       {
         "sourceId": "tsmc-pr",
         "scope": "source_fetch",
         "message": "HTTP 403",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       },
       {
         "sourceId": "nvidia-news",
         "scope": "source_fetch",
         "message": "No parseable articles found",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       },
       {
         "sourceId": "trendforce",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       },
       {
         "sourceId": "eia-today",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       },
       {
         "sourceId": "amd-news",
         "scope": "source_fetch",
         "message": "The operation was aborted due to timeout",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T15:47:54.060Z"
       }
     ]
   },
   "executiveSummary": "本次情報以規則引擎整理公開來源，最高優先序主題為 SEMI EXPORT CONTROL、TSMC CAPEX、TSMC CAPEX。所有內容僅供研究與教育用途，不構成個人化投資建議。 本次有 6 個來源或本機 AI 警訊，已寫入 /doctor。",
   "events": [
     {
-      "id": "tw-2026-06-21-2358-event-01",
+      "id": "tw-2026-06-21-2347-event-01",
       "category": "SEMI_EXPORT_CONTROL",
       "title": "Semiconductor news source temporarily unavailable",
       "url": "https://feeds.reuters.com/reuters/technologyNews",
       "publisher": "Reuters",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 半導體、設備材料、先進製程、IC 設計 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "semiconductor",
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-02",
+      "id": "tw-2026-06-21-2347-event-02",
       "category": "TSMC_CAPEX",
       "title": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
       "url": "https://www.semiconductor-digest.com/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e",
@@ -439,7 +439,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-03",
+      "id": "tw-2026-06-21-2347-event-03",
       "category": "TSMC_CAPEX",
       "title": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
       "url": "https://www.semiconductor-digest.com/brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio",
@@ -625,7 +625,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-04",
+      "id": "tw-2026-06-21-2347-event-04",
       "category": "TSMC_CAPEX",
       "title": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
       "url": "https://www.semiconductor-digest.com/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
@@ -811,7 +811,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-05",
+      "id": "tw-2026-06-21-2347-event-05",
       "category": "TSMC_CAPEX",
       "title": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
       "url": "https://www.semiconductor-digest.com/nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop",
@@ -997,7 +997,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-06",
+      "id": "tw-2026-06-21-2347-event-06",
       "category": "TSMC_CAPEX",
       "title": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
       "url": "https://www.semiconductor-digest.com/ais-next-power-challenge-is-inside-the-delivery-path/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ais-next-power-challenge-is-inside-the-delivery-path",
@@ -1183,12 +1183,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-07",
+      "id": "tw-2026-06-21-2347-event-07",
       "category": "NVIDIA_SUPPLY_CHAIN",
       "title": "NVIDIA newsroom feed unavailable",
       "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
       "publisher": "NVIDIA",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 AI 晶片、先進封裝、伺服器代工、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Nvidia / AMD / Broadcom",
@@ -1369,12 +1369,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-08",
+      "id": "tw-2026-06-21-2347-event-08",
       "category": "NVIDIA_SUPPLY_CHAIN",
       "title": "AMD newsroom feed unavailable",
       "url": "https://www.amd.com/en/newsroom/rss.xml",
       "publisher": "AMD",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 AI 晶片、先進封裝、伺服器代工、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Nvidia / AMD / Broadcom",
@@ -1555,12 +1555,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-09",
+      "id": "tw-2026-06-21-2347-event-09",
       "category": "TSMC_CAPEX",
       "title": "TSMC press page metadata unavailable",
       "url": "https://pr.tsmc.com/english/news?type=press",
       "publisher": "TSMC",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
@@ -1741,12 +1741,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-10",
+      "id": "tw-2026-06-21-2347-event-10",
       "category": "TAIWAN_GEOPOLITICS",
       "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "url": "https://www.twse.com.tw/en/news/newsList",
       "publisher": "TWSE",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
       "whyItMatters": "此事件可能改變 半導體、航運、金融、出口供應鏈 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Taiwan market / MOPS / TWSE",
@@ -1926,12 +1926,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-11",
+      "id": "tw-2026-06-21-2347-event-11",
       "category": "FED_RATE",
       "title": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2111,12 +2111,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-12",
+      "id": "tw-2026-06-21-2347-event-12",
       "category": "FED_RATE",
       "title": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2296,12 +2296,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-13",
+      "id": "tw-2026-06-21-2347-event-13",
       "category": "FED_RATE",
       "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2481,12 +2481,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-14",
+      "id": "tw-2026-06-21-2347-event-14",
       "category": "FED_RATE",
       "title": "Federal Reserve issues FOMC statement",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve issues FOMC statement",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2666,12 +2666,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-15",
+      "id": "tw-2026-06-21-2347-event-15",
       "category": "FED_RATE",
       "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2851,12 +2851,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-16",
+      "id": "tw-2026-06-21-2347-event-16",
       "category": "TRADE_TARIFF",
       "title": "Press Releases",
       "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
       "publisher": "USTR",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
       "whyItMatters": "此事件可能改變 出口供應鏈、硬體組裝、航運、中國曝險 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "geopolitics / trade policy",
@@ -3036,12 +3036,12 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-17",
+      "id": "tw-2026-06-21-2347-event-17",
       "category": "DATA_CENTER_POWER",
       "title": "EIA energy feed unavailable",
       "url": "https://www.eia.gov/todayinenergy/rss.php",
       "publisher": "U.S. Energy Information Administration",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 電源供應、散熱、電網設備、資料中心基礎建設 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "energy",
@@ -3222,7 +3222,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-18",
+      "id": "tw-2026-06-21-2347-event-18",
       "category": "SHIPPING_DISRUPTION",
       "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
@@ -3407,7 +3407,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-19",
+      "id": "tw-2026-06-21-2347-event-19",
       "category": "SHIPPING_DISRUPTION",
       "title": "Why the Northeast is quietly running out of diesel",
       "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
@@ -3592,7 +3592,7 @@
       ]
     },
     {
-      "id": "tw-2026-06-21-2358-event-20",
+      "id": "tw-2026-06-21-2347-event-20",
       "category": "SHIPPING_DISRUPTION",
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
@@ -3797,22 +3797,22 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-09",
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-09",
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": [
         "TSMC_CAPEX",
@@ -3840,13 +3840,13 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3869,13 +3869,13 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3898,16 +3898,16 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-09",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-09",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -3934,15 +3934,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-09",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-09",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -3969,12 +3969,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3997,12 +3997,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4025,12 +4025,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4053,12 +4053,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4081,12 +4081,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4109,12 +4109,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4137,12 +4137,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-09"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4165,15 +4165,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-09",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-09",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "DATA_CENTER_POWER",
@@ -4200,15 +4200,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-02",
-        "tw-2026-06-21-2358-event-03",
-        "tw-2026-06-21-2358-event-04",
-        "tw-2026-06-21-2358-event-05",
-        "tw-2026-06-21-2358-event-06",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-09",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-02",
+        "tw-2026-06-21-2347-event-03",
+        "tw-2026-06-21-2347-event-04",
+        "tw-2026-06-21-2347-event-05",
+        "tw-2026-06-21-2347-event-06",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-09",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4234,16 +4234,16 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4269,14 +4269,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": []
     },
@@ -4299,15 +4299,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4334,14 +4334,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4368,14 +4368,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4402,15 +4402,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4437,12 +4437,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": [
         "FED_RATE",
@@ -4469,12 +4469,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4497,12 +4497,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4525,11 +4525,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4552,11 +4552,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4579,11 +4579,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15"
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4606,12 +4606,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-11",
-        "tw-2026-06-21-2358-event-12",
-        "tw-2026-06-21-2358-event-13",
-        "tw-2026-06-21-2358-event-14",
-        "tw-2026-06-21-2358-event-15",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-11",
+        "tw-2026-06-21-2347-event-12",
+        "tw-2026-06-21-2347-event-13",
+        "tw-2026-06-21-2347-event-14",
+        "tw-2026-06-21-2347-event-15",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": []
     },
@@ -4634,10 +4634,10 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4664,9 +4664,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08",
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08",
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4692,8 +4692,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4719,8 +4719,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-07",
-        "tw-2026-06-21-2358-event-08"
+        "tw-2026-06-21-2347-event-07",
+        "tw-2026-06-21-2347-event-08"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4746,11 +4746,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-16",
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-16",
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4777,11 +4777,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-16",
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-16",
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4808,11 +4808,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-16",
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-16",
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4839,10 +4839,10 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -4865,7 +4865,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4888,7 +4888,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4911,7 +4911,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4934,7 +4934,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4957,7 +4957,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4980,7 +4980,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -5003,7 +5003,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-17"
+        "tw-2026-06-21-2347-event-17"
       ],
       "sensitivityTags": []
     },
@@ -5026,9 +5026,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-10",
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-10",
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": []
     },
@@ -5051,7 +5051,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01"
+        "tw-2026-06-21-2347-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5074,7 +5074,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01"
+        "tw-2026-06-21-2347-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5097,7 +5097,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01"
+        "tw-2026-06-21-2347-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5120,7 +5120,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01"
+        "tw-2026-06-21-2347-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5143,7 +5143,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01"
+        "tw-2026-06-21-2347-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5166,8 +5166,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-01",
-        "tw-2026-06-21-2358-event-10"
+        "tw-2026-06-21-2347-event-01",
+        "tw-2026-06-21-2347-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5190,7 +5190,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10"
+        "tw-2026-06-21-2347-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5213,7 +5213,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-10"
+        "tw-2026-06-21-2347-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5236,9 +5236,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5261,9 +5261,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5286,9 +5286,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5311,9 +5311,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5336,9 +5336,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5361,9 +5361,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5386,9 +5386,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5411,9 +5411,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5436,9 +5436,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5461,9 +5461,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-18",
-        "tw-2026-06-21-2358-event-19",
-        "tw-2026-06-21-2358-event-20"
+        "tw-2026-06-21-2347-event-18",
+        "tw-2026-06-21-2347-event-19",
+        "tw-2026-06-21-2347-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5486,14 +5486,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-06-21-2358-event-16"
+        "tw-2026-06-21-2347-event-16"
       ],
       "sensitivityTags": []
     }
   ],
   "managerObservations": [
     {
-      "eventId": "tw-2026-06-21-2358-event-01",
+      "eventId": "tw-2026-06-21-2347-event-01",
       "eventTitle": "Semiconductor news source temporarily unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 半導體、設備材料、先進製程。台灣相關分數 90/100，代表它可能牽動 台積電 2330、聯發科 2454、世芯-KY 3661、創意 3443、家登 3680，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5526,7 +5526,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-02",
+      "eventId": "tw-2026-06-21-2347-event-02",
       "eventTitle": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5559,7 +5559,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-03",
+      "eventId": "tw-2026-06-21-2347-event-03",
       "eventTitle": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5592,7 +5592,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-04",
+      "eventId": "tw-2026-06-21-2347-event-04",
       "eventTitle": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5625,7 +5625,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-05",
+      "eventId": "tw-2026-06-21-2347-event-05",
       "eventTitle": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5658,7 +5658,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-06",
+      "eventId": "tw-2026-06-21-2347-event-06",
       "eventTitle": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5691,7 +5691,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-07",
+      "eventId": "tw-2026-06-21-2347-event-07",
       "eventTitle": "NVIDIA newsroom feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 AI 晶片、先進封裝、伺服器代工。台灣相關分數 94/100，代表它可能牽動 台積電 2330、廣達 2382、緯創 3231、緯穎 6669、台光電 2383，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5724,7 +5724,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-08",
+      "eventId": "tw-2026-06-21-2347-event-08",
       "eventTitle": "AMD newsroom feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 AI 晶片、先進封裝、伺服器代工。台灣相關分數 94/100，代表它可能牽動 台積電 2330、廣達 2382、緯創 3231、緯穎 6669、台光電 2383，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5757,7 +5757,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-09",
+      "eventId": "tw-2026-06-21-2347-event-09",
       "eventTitle": "TSMC press page metadata unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5790,7 +5790,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-10",
+      "eventId": "tw-2026-06-21-2347-event-10",
       "eventTitle": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 半導體、航運、金融。台灣相關分數 99/100，代表它可能牽動 台積電 2330、長榮 2603、陽明 2609、國泰金 2882、聯電 2303，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5823,7 +5823,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-11",
+      "eventId": "tw-2026-06-21-2347-event-11",
       "eventTitle": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5856,7 +5856,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-12",
+      "eventId": "tw-2026-06-21-2347-event-12",
       "eventTitle": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5889,7 +5889,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-13",
+      "eventId": "tw-2026-06-21-2347-event-13",
       "eventTitle": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5922,7 +5922,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-14",
+      "eventId": "tw-2026-06-21-2347-event-14",
       "eventTitle": "Federal Reserve issues FOMC statement",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5955,7 +5955,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-15",
+      "eventId": "tw-2026-06-21-2347-event-15",
       "eventTitle": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5988,7 +5988,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-16",
+      "eventId": "tw-2026-06-21-2347-event-16",
       "eventTitle": "Press Releases",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 出口供應鏈、硬體組裝、航運。台灣相關分數 78/100，代表它可能牽動 鴻海 2317、廣達 2382、緯創 3231、長榮 2603、陽明 2609，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6021,7 +6021,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-17",
+      "eventId": "tw-2026-06-21-2347-event-17",
       "eventTitle": "EIA energy feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 電源供應、散熱、電網設備。台灣相關分數 86/100，代表它可能牽動 台達電 2308、奇鋐 3017、雙鴻 3324、智邦 2345、康舒 6282，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6054,7 +6054,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-18",
+      "eventId": "tw-2026-06-21-2347-event-18",
       "eventTitle": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6087,7 +6087,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-19",
+      "eventId": "tw-2026-06-21-2347-event-19",
       "eventTitle": "Why the Northeast is quietly running out of diesel",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6120,7 +6120,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-06-21-2358-event-20",
+      "eventId": "tw-2026-06-21-2347-event-20",
       "eventTitle": "Exclusive: Central Freight Lines to shut down after 96 years",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6155,18 +6155,18 @@
   ],
   "sources": [
     {
-      "id": "tw-2026-06-21-2358-source-01",
+      "id": "tw-2026-06-21-2347-source-01",
       "title": "Semiconductor news source temporarily unavailable",
       "url": "https://feeds.reuters.com/reuters/technologyNews",
       "publisher": "Reuters",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "semiconductor",
       "sourceId": "reuters-tech",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-02",
+      "id": "tw-2026-06-21-2347-source-02",
       "title": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
       "url": "https://www.semiconductor-digest.com/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e",
       "publisher": "Semiconductor Digest",
@@ -6177,7 +6177,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-03",
+      "id": "tw-2026-06-21-2347-source-03",
       "title": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
       "url": "https://www.semiconductor-digest.com/brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio",
       "publisher": "Semiconductor Digest",
@@ -6188,7 +6188,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-04",
+      "id": "tw-2026-06-21-2347-source-04",
       "title": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
       "url": "https://www.semiconductor-digest.com/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
       "publisher": "Semiconductor Digest",
@@ -6199,7 +6199,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-05",
+      "id": "tw-2026-06-21-2347-source-05",
       "title": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
       "url": "https://www.semiconductor-digest.com/nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop",
       "publisher": "Semiconductor Digest",
@@ -6210,7 +6210,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-06",
+      "id": "tw-2026-06-21-2347-source-06",
       "title": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
       "url": "https://www.semiconductor-digest.com/ais-next-power-challenge-is-inside-the-delivery-path/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ais-next-power-challenge-is-inside-the-delivery-path",
       "publisher": "Semiconductor Digest",
@@ -6221,128 +6221,128 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-07",
+      "id": "tw-2026-06-21-2347-source-07",
       "title": "NVIDIA newsroom feed unavailable",
       "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
       "publisher": "NVIDIA",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "Nvidia / AMD / Broadcom",
       "sourceId": "nvidia-news",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-08",
+      "id": "tw-2026-06-21-2347-source-08",
       "title": "AMD newsroom feed unavailable",
       "url": "https://www.amd.com/en/newsroom/rss.xml",
       "publisher": "AMD",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "Nvidia / AMD / Broadcom",
       "sourceId": "amd-news",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-09",
+      "id": "tw-2026-06-21-2347-source-09",
       "title": "TSMC press page metadata unavailable",
       "url": "https://pr.tsmc.com/english/news?type=press",
       "publisher": "TSMC",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "tsmc-pr",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-10",
+      "id": "tw-2026-06-21-2347-source-10",
       "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "url": "https://www.twse.com.tw/en/news/newsList",
       "publisher": "TWSE",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
       "sourceCategory": "Taiwan market / MOPS / TWSE",
       "sourceId": "twse-news",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-11",
+      "id": "tw-2026-06-21-2347-source-11",
       "title": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-12",
+      "id": "tw-2026-06-21-2347-source-12",
       "title": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-13",
+      "id": "tw-2026-06-21-2347-source-13",
       "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-14",
+      "id": "tw-2026-06-21-2347-source-14",
       "title": "Federal Reserve issues FOMC statement",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve issues FOMC statement",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-15",
+      "id": "tw-2026-06-21-2347-source-15",
       "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-16",
+      "id": "tw-2026-06-21-2347-source-16",
       "title": "Press Releases",
       "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
       "publisher": "USTR",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
       "sourceCategory": "geopolitics / trade policy",
       "sourceId": "ustr-press",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-17",
+      "id": "tw-2026-06-21-2347-source-17",
       "title": "EIA energy feed unavailable",
       "url": "https://www.eia.gov/todayinenergy/rss.php",
       "publisher": "U.S. Energy Information Administration",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "energy",
       "sourceId": "eia-today",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-18",
+      "id": "tw-2026-06-21-2347-source-18",
       "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
       "publisher": "FreightWaves",
@@ -6353,7 +6353,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-19",
+      "id": "tw-2026-06-21-2347-source-19",
       "title": "Why the Northeast is quietly running out of diesel",
       "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
       "publisher": "FreightWaves",
@@ -6364,7 +6364,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-20",
+      "id": "tw-2026-06-21-2347-source-20",
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
       "publisher": "FreightWaves",
@@ -6375,7 +6375,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-21",
+      "id": "tw-2026-06-21-2347-source-21",
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "url": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
       "publisher": "FreightWaves",
@@ -6386,7 +6386,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-22",
+      "id": "tw-2026-06-21-2347-source-22",
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "url": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
       "publisher": "FreightWaves",
@@ -6397,29 +6397,29 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-23",
+      "id": "tw-2026-06-21-2347-source-23",
       "title": "Memory market feed unavailable",
       "url": "https://www.trendforce.com/presscenter/rss",
       "publisher": "TrendForce",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "Memory market RSS could not be parsed. Track HBM pricing, DRAM cycle, and server memory demand through supplier reports. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "memory / HBM / DRAM",
       "sourceId": "trendforce",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-06-21-2358-source-24",
+      "id": "tw-2026-06-21-2347-source-24",
       "title": "MOPS metadata unavailable",
       "url": "https://mops.twse.com.tw/mops/web/index",
       "publisher": "MOPS",
-      "publishedAt": "2026-06-21T15:58:48.984Z",
+      "publishedAt": "2026-06-21T15:47:54.060Z",
       "summary": "MOPS public website metadata could not be parsed. Company material information remains the primary verification source.",
       "sourceCategory": "company IR / press release",
       "sourceId": "mops",
       "quality": "official"
     },
     {
-      "id": "tw-2026-06-21-2358-source-25",
+      "id": "tw-2026-06-21-2347-source-25",
       "title": "Sponsored: BESS Is becoming the bridge between AI data centers and the grid",
       "url": "https://www.datacenterdynamics.com/en/opinions/bess-is-becoming-the-bridge-between-ai-data-centers-and-the-grid/",
       "publisher": "Data Center Dynamics",
@@ -6430,7 +6430,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-26",
+      "id": "tw-2026-06-21-2347-source-26",
       "title": "Nuclear physics research lab Jefferson Lab breaks ground on 30,000 sq ft data center",
       "url": "https://www.datacenterdynamics.com/en/news/nuclear-physics-research-lab-jefferson-lab-breaks-ground-on-30000-sq-ft-data-center/",
       "publisher": "Data Center Dynamics",
@@ -6441,7 +6441,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-27",
+      "id": "tw-2026-06-21-2347-source-27",
       "title": "Digi Power X sued over noise from New York crypto mining site",
       "url": "https://www.datacenterdynamics.com/en/news/digi-power-x-sued-over-noise-from-new-york-crypto-mining-site/",
       "publisher": "Data Center Dynamics",
@@ -6452,7 +6452,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-28",
+      "id": "tw-2026-06-21-2347-source-28",
       "title": "Plans filed for three-building data center campus in Northumberland, UK",
       "url": "https://www.datacenterdynamics.com/en/news/plans-filed-for-three-building-data-center-campus-in-northumberland-uk/",
       "publisher": "Data Center Dynamics",
@@ -6463,7 +6463,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-06-21-2358-source-29",
+      "id": "tw-2026-06-21-2347-source-29",
       "title": "AT&T Business extends 400G wavelength to more than a dozen metros",
       "url": "https://www.datacenterdynamics.com/en/news/att-business-extends-400g-wavelength-to-more-than-a-dozen-metros/",
       "publisher": "Data Center Dynamics",

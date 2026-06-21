@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T15:20:35.633Z",
-  "runId": "tw-2026-06-21-2320",
-  "runType": "manual",
+  "generatedAt": "2026-06-21T15:58:48.984Z",
+  "runId": "tw-2026-06-21-2358",
+  "runType": "evening",
   "localAi": {
     "enabled": false,
     "provider": "none",
@@ -12,87 +12,115 @@
   "diagnostics": [
     {
       "id": "latest-json",
-      "label": "latest.json",
+      "label": "latest.json 是否存在",
       "status": "pass",
-      "description": "latest.json 已產生並包含事件。",
-      "nextAction": "若失敗，執行 pnpm update:intelligence。"
+      "description": "網站有最新情報資料，首頁可以顯示今日事件。",
+      "nextAction": "如果失敗，請到 GitHub Actions 手動執行 Update Intelligence。"
     },
     {
       "id": "schema",
-      "label": "latest.json schema",
+      "label": "latest.json 格式",
       "status": "pass",
-      "description": "latest.json 通過 zod schema。",
-      "nextAction": "若未通過，執行 pnpm validate:intelligence 查看欄位錯誤。"
+      "description": "最新情報格式正確，網站可以安全讀取。",
+      "nextAction": "如果驗證失敗，執行 npm run validate:intelligence 看是哪個欄位壞掉。"
     },
     {
       "id": "status-json",
-      "label": "data/system/status.json",
+      "label": "系統狀態檔",
       "status": "pass",
-      "description": "status.json 會與本次更新一起寫出。",
-      "nextAction": "若網站未顯示，確認檔案是否被 commit。"
+      "description": "data/system/status.json 會告訴 /doctor 每一步是否成功。",
+      "nextAction": "如果網站看不到狀態，確認這個檔案是否被 commit。"
     },
     {
       "id": "github-action-time",
-      "label": "GitHub Actions update time",
+      "label": "GitHub Actions 更新時間",
       "status": "pass",
-      "description": "最新 runId: tw-2026-06-21-2320",
-      "nextAction": "若時間過舊，檢查 Actions schedule 或手動 workflow_dispatch。"
+      "description": "最新批次是 tw-2026-06-21-2358，代表更新流程有留下紀錄。",
+      "nextAction": "如果時間太舊，檢查 Actions schedule 或按 workflow_dispatch 手動跑一次。"
+    },
+    {
+      "id": "all-companies-json",
+      "label": "完整公司清單",
+      "status": "pass",
+      "description": "目前公司清單有 1942 家。",
+      "nextAction": "如果少於 1000 家，先執行 npm run update:companies，再執行 npm run validate:companies。"
+    },
+    {
+      "id": "company-universe-twse",
+      "label": "上市公司數",
+      "status": "pass",
+      "description": "上市公司 1052 家。",
+      "nextAction": "如果為 0，檢查 TWSE ISIN 來源是否抓取成功。"
+    },
+    {
+      "id": "company-universe-tpex",
+      "label": "上櫃公司數",
+      "status": "pass",
+      "description": "上櫃公司 890 家。",
+      "nextAction": "如果為 0，檢查 TPEx ISIN 來源是否抓取成功。"
+    },
+    {
+      "id": "required-tickers",
+      "label": "常見公司是否存在",
+      "status": "pass",
+      "description": "檢查台積電、鴻海、廣達、台達電、長榮、國泰金是否都在清單中。",
+      "nextAction": "如果缺少，代表公司清單解析不完整，請重新跑 update:companies。"
+    },
+    {
+      "id": "company-universe-updated",
+      "label": "公司清單更新時間",
+      "status": "pass",
+      "description": "公司清單更新於 2026-06-21T15:58:20.445Z。",
+      "nextAction": "如果時間太舊，手動跑 GitHub Actions 或 npm run update:companies。"
     },
     {
       "id": "source-count",
-      "label": "source count",
+      "label": "情報來源數",
       "status": "pass",
-      "description": "已設定 13 個來源。",
-      "nextAction": "至少維持 12 類公開來源。"
+      "description": "已設定 13 個公開來源。",
+      "nextAction": "如果來源太少，補充 src/data/sources.ts。"
     },
     {
       "id": "article-count",
-      "label": "article count",
+      "label": "來源文章數",
       "status": "pass",
-      "description": "本次產生 29 篇來源紀錄。",
-      "nextAction": "若為 0，檢查來源抓取或 fallback。"
+      "description": "本次整理 29 筆來源紀錄。",
+      "nextAction": "如果為 0，檢查公開來源是否改版或網路是否失敗。"
     },
     {
       "id": "event-count",
-      "label": "event count",
+      "label": "今日事件數",
       "status": "pass",
       "description": "本次產生 20 個事件。",
-      "nextAction": "若為 0，檢查 classifier。"
+      "nextAction": "如果為 0，檢查 keyword classifier 是否過度嚴格。"
     },
     {
       "id": "company-impact-count",
-      "label": "company impact count",
+      "label": "受影響公司數",
       "status": "pass",
-      "description": "本次產生 55 筆公司影響。",
-      "nextAction": "若偏低，檢查 supplyChainMapper。"
-    },
-    {
-      "id": "company-universe",
-      "label": "Taiwan company universe count",
-      "status": "pass",
-      "description": "公司 universe 目前 142 家。",
-      "nextAction": "若低於 120，擴充 src/data/taiwanCompanies.ts。"
+      "description": "本次整理 62 筆公司影響。",
+      "nextAction": "如果偏低，檢查 supplyChainMapper 是否有讀到完整公司清單。"
     },
     {
       "id": "rule-engine",
-      "label": "rule engine status",
+      "label": "規則引擎",
       "status": "pass",
-      "description": "keyword classifier、mapper、scorer、manager view 已執行。",
-      "nextAction": "若分類不準，調整 src/lib/rules。"
+      "description": "分類、供應鏈對應、影響評分與研究員觀點都已執行。",
+      "nextAction": "如果分類不準，調整 src/lib/rules 裡的規則。"
     },
     {
       "id": "local-ai",
-      "label": "Windows local AI optional status",
+      "label": "Windows 本機 AI",
       "status": "warning",
-      "description": "Local AI 狀態：disabled。",
-      "nextAction": "未設定也可正常使用 rule-based 模式。"
+      "description": "沒有啟用本機 AI，網站會使用規則引擎，這是正常狀態。",
+      "nextAction": "需要本機 AI 時，設定 LOCAL_AI_ENABLED=true 與 Ollama 或 LM Studio。"
     },
     {
       "id": "ollama",
       "label": "Ollama endpoint",
       "status": "warning",
-      "description": "Ollama not configured.",
-      "nextAction": "需要時設定 LOCAL_AI_ENABLED=true 與 OLLAMA_BASE_URL。"
+      "description": "Ollama 沒有設定；規則引擎仍可完整運作。",
+      "nextAction": "需要時設定 OLLAMA_BASE_URL=http://localhost:11434。"
     },
     {
       "id": "lm-studio",
@@ -102,83 +130,114 @@
       "nextAction": "需要時開啟 LM Studio local server。"
     },
     {
-      "id": "no-apple",
-      "label": "no Apple dependency",
+      "id": "company-source-status",
+      "label": "官方公司來源狀態",
       "status": "pass",
-      "description": "未使用 Apple Shortcuts、Apple Intelligence 或 iCloud。",
-      "nextAction": "Windows 使用者可直接用 GitHub、Vercel、瀏覽器與 pnpm。"
+      "description": "TWSE / TPEx ISIN 公司來源沒有記錄錯誤。",
+      "nextAction": "如果有警訊，先看 data/taiwan-companies/summary.json 的 parseErrors。"
+    },
+    {
+      "id": "no-apple",
+      "label": "不依賴 Apple",
+      "status": "pass",
+      "description": "沒有使用 Apple Shortcuts、Apple Intelligence 或 iCloud。",
+      "nextAction": "Windows 使用者可直接用 GitHub、Vercel、瀏覽器與 npm。"
     },
     {
       "id": "no-openai-key",
-      "label": "no OpenAI API key required",
+      "label": "不需要 OpenAI API key",
       "status": "pass",
-      "description": "未讀取 OPENAI_API_KEY，也沒有 OpenAI API 呼叫。",
+      "description": "沒有讀取 OPENAI_API_KEY，也沒有 OpenAI API 呼叫。",
       "nextAction": "ChatGPT 手動加強只產生 prompt 與 localStorage 匯入。"
     },
     {
       "id": "no-supabase",
-      "label": "no Supabase required",
+      "label": "不需要 Supabase",
       "status": "pass",
       "description": "資料以 JSON 檔案與 localStorage 保存。",
-      "nextAction": "不需建立 database 或 server-side secret。"
+      "nextAction": "不需要 database 或 server-side secret。"
     },
     {
       "id": "no-paid-api",
-      "label": "no paid API required",
+      "label": "不需要付費 API",
       "status": "pass",
-      "description": "更新器只抓公開網頁、RSS 或 fallback。",
-      "nextAction": "若新增來源，避免付費 API 與 secret。"
+      "description": "更新器只使用公開網頁、RSS、官方 ISIN 與 fallback。",
+      "nextAction": "新增來源時避免付費 API 與 secret。"
     },
     {
       "id": "vercel-build",
-      "label": "Vercel deployment build time",
+      "label": "Vercel 部署狀態",
       "status": "warning",
-      "description": "Vercel build time 由部署平台顯示；本檔記錄資料更新時間。",
-      "nextAction": "若網站未更新，檢查 GitHub commit 與 Vercel redeploy。"
+      "description": "Vercel build time 由部署平台顯示；這裡記錄資料更新時間。",
+      "nextAction": "如果網站沒更新，檢查 GitHub Actions 是否 commit、Vercel 是否 redeploy。"
     }
   ],
+  "companyUniverse": {
+    "status": "ok",
+    "totalCompanies": 1942,
+    "twseCount": 1052,
+    "tpexCount": 890,
+    "updatedAt": "2026-06-21T15:58:20.445Z",
+    "sourceUrls": [
+      "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2",
+      "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4"
+    ],
+    "parseErrors": []
+  },
   "systemStatus": {
     "ok": true,
     "sourceCount": 13,
     "articleCount": 29,
     "eventCount": 20,
-    "companyImpactCount": 55,
+    "companyImpactCount": 62,
+    "companyUniverse": {
+      "status": "ok",
+      "totalCompanies": 1942,
+      "twseCount": 1052,
+      "tpexCount": 890,
+      "updatedAt": "2026-06-21T15:58:20.445Z",
+      "sourceUrls": [
+        "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2",
+        "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4"
+      ],
+      "parseErrors": []
+    },
     "errors": [
       {
         "sourceId": "reuters-tech",
         "scope": "source_fetch",
         "message": "fetch failed",
-        "at": "2026-06-21T15:20:35.633Z"
-      },
-      {
-        "sourceId": "nvidia-news",
-        "scope": "source_fetch",
-        "message": "No parseable articles found",
-        "at": "2026-06-21T15:20:35.633Z"
+        "at": "2026-06-21T15:58:48.984Z"
       },
       {
         "sourceId": "tsmc-pr",
         "scope": "source_fetch",
         "message": "HTTP 403",
-        "at": "2026-06-21T15:20:35.633Z"
+        "at": "2026-06-21T15:58:48.984Z"
       },
       {
-        "sourceId": "eia-today",
+        "sourceId": "nvidia-news",
         "scope": "source_fetch",
-        "message": "HTTP 404",
-        "at": "2026-06-21T15:20:35.633Z"
+        "message": "No parseable articles found",
+        "at": "2026-06-21T15:58:48.984Z"
       },
       {
         "sourceId": "trendforce",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-06-21T15:20:35.633Z"
+        "at": "2026-06-21T15:58:48.984Z"
+      },
+      {
+        "sourceId": "eia-today",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T15:58:48.984Z"
       },
       {
         "sourceId": "amd-news",
         "scope": "source_fetch",
         "message": "The operation was aborted due to timeout",
-        "at": "2026-06-21T15:20:35.633Z"
+        "at": "2026-06-21T15:58:48.984Z"
       }
     ]
   }

@@ -1,11 +1,11 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { intelligenceSources, type IntelligenceSource } from "../src/data/sources";
-import { taiwanCompanies, type TaiwanCompany } from "../src/data/taiwanCompanies";
 import { classifyEvent, type EventCategory } from "../src/lib/rules/keywordClassifier";
 import { mapSupplyChain } from "../src/lib/rules/supplyChainMapper";
 import { scoreImpact } from "../src/lib/rules/impactScorer";
 import { generateManagerView } from "../src/lib/rules/managerViewGenerator";
+import { getCompanyUniverseSummary, getMergedCompanyUniverse } from "../src/lib/companies/mergeCompanyUniverse";
 import {
   intelligenceSchema,
   type CompanyImpact,
@@ -47,6 +47,7 @@ const runType = determineRunType(generatedAt);
 const errors: StatusError[] = [];
 
 async function main() {
+  const companyUniverseSummary = getCompanyUniverseSummary();
   const enabledSources = intelligenceSources.filter((source) => source.enabled);
   const fetchedArticles = await Promise.all(enabledSources.map(fetchSource));
   const articles = dedupeArticles(fetchedArticles.flat()).slice(0, 40);
@@ -86,8 +87,11 @@ async function main() {
         companyName: company.companyName,
         ticker: company.ticker,
         exchange: company.exchange,
+        market: company.market,
         industry: company.industry,
-        supplyChainRole: company.supplyChainRole
+        supplyChainRole: company.supplyChainRole,
+        isCurated: company.isCurated,
+        evidenceLevel: company.evidenceLevel
       })),
       taiwanRelevanceScore: score.taiwanRelevanceScore,
       marketRelevanceScore: score.marketRelevanceScore,
@@ -109,6 +113,15 @@ async function main() {
     articleCount: articles.length,
     eventCount: events.length,
     companyImpactCount: companyImpacts.length,
+    companyUniverse: {
+      status: companyUniverseSummary.status ?? (companyUniverseSummary.totalCompanies >= 1000 ? "ok" : "warning"),
+      totalCompanies: companyUniverseSummary.totalCompanies,
+      twseCount: companyUniverseSummary.twseCount,
+      tpexCount: companyUniverseSummary.tpexCount,
+      updatedAt: companyUniverseSummary.updatedAt,
+      sourceUrls: companyUniverseSummary.sourceUrls,
+      parseErrors: companyUniverseSummary.parseErrors
+    },
     errors
   };
 
@@ -316,10 +329,11 @@ async function buildManagerObservations(events: IntelligenceEvent[]): Promise<Ma
 
 function buildCompanyImpacts(events: IntelligenceEvent[]): CompanyImpact[] {
   const impacts = new Map<string, CompanyImpact>();
+  const companyUniverse = getMergedCompanyUniverse();
 
   for (const event of events) {
     for (const affected of event.likelyAffectedCompanies) {
-      const sourceCompany = taiwanCompanies.find((company) => company.ticker === affected.ticker);
+      const sourceCompany = companyUniverse.find((company) => company.ticker === affected.ticker);
       const existing = impacts.get(affected.ticker);
 
       if (!existing) {
@@ -327,8 +341,11 @@ function buildCompanyImpacts(events: IntelligenceEvent[]): CompanyImpact[] {
           companyName: affected.companyName,
           ticker: affected.ticker,
           exchange: affected.exchange,
+          market: affected.market,
           industry: affected.industry,
           supplyChainRole: affected.supplyChainRole,
+          isCurated: affected.isCurated ?? false,
+          evidenceLevel: affected.evidenceLevel ?? "industry_match",
           impactDirection: event.impactDirection,
           impactMagnitude: event.impactMagnitude,
           researchPriority: event.researchPriority,
@@ -354,6 +371,9 @@ function buildCompanyImpacts(events: IntelligenceEvent[]): CompanyImpact[] {
 }
 
 async function buildUpdaterStatus(latest: IntelligenceData): Promise<UpdaterStatus> {
+  const companyUniverse = latest.systemStatus.companyUniverse;
+  const requiredTickers = ["2330", "2317", "2382", "2308", "2603", "2882"];
+  const presentTickers = new Set(getMergedCompanyUniverse().map((company) => company.ticker));
   const localAiStatus =
     latest.engine.mode === "local_ai_enhanced"
       ? "reachable"
@@ -364,18 +384,22 @@ async function buildUpdaterStatus(latest: IntelligenceData): Promise<UpdaterStat
           : "not_configured";
   const lmStudio = await inspectLmStudioStatus();
   const diagnostics: DiagnosticCheck[] = [
-    check("latest-json", "latest.json", latest.events.length > 0 ? "pass" : "fail", "latest.json 已產生並包含事件。", "若失敗，執行 pnpm update:intelligence。"),
-    check("schema", "latest.json schema", "pass", "latest.json 通過 zod schema。", "若未通過，執行 pnpm validate:intelligence 查看欄位錯誤。"),
-    check("status-json", "data/system/status.json", "pass", "status.json 會與本次更新一起寫出。", "若網站未顯示，確認檔案是否被 commit。"),
-    check("github-action-time", "GitHub Actions update time", "pass", `最新 runId: ${latest.runId}`, "若時間過舊，檢查 Actions schedule 或手動 workflow_dispatch。"),
-    check("source-count", "source count", latest.systemStatus.sourceCount >= 12 ? "pass" : "warning", `已設定 ${latest.systemStatus.sourceCount} 個來源。`, "至少維持 12 類公開來源。"),
-    check("article-count", "article count", latest.systemStatus.articleCount > 0 ? "pass" : "fail", `本次產生 ${latest.systemStatus.articleCount} 篇來源紀錄。`, "若為 0，檢查來源抓取或 fallback。"),
-    check("event-count", "event count", latest.systemStatus.eventCount > 0 ? "pass" : "fail", `本次產生 ${latest.systemStatus.eventCount} 個事件。`, "若為 0，檢查 classifier。"),
-    check("company-impact-count", "company impact count", latest.systemStatus.companyImpactCount > 0 ? "pass" : "warning", `本次產生 ${latest.systemStatus.companyImpactCount} 筆公司影響。`, "若偏低，檢查 supplyChainMapper。"),
-    check("company-universe", "Taiwan company universe count", taiwanCompanies.length >= 120 ? "pass" : "warning", `公司 universe 目前 ${taiwanCompanies.length} 家。`, "若低於 120，擴充 src/data/taiwanCompanies.ts。"),
-    check("rule-engine", "rule engine status", "pass", "keyword classifier、mapper、scorer、manager view 已執行。", "若分類不準，調整 src/lib/rules。"),
-    check("local-ai", "Windows local AI optional status", localAiStatus === "reachable" ? "pass" : "warning", `Local AI 狀態：${localAiStatus}。`, "未設定也可正常使用 rule-based 模式。"),
-    check("ollama", "Ollama endpoint", localAiStatus === "reachable" ? "pass" : localAiEnabled() ? "warning" : "warning", process.env.OLLAMA_BASE_URL ? `OLLAMA_BASE_URL=${process.env.OLLAMA_BASE_URL}` : "Ollama not configured.", "需要時設定 LOCAL_AI_ENABLED=true 與 OLLAMA_BASE_URL。"),
+    check("latest-json", "latest.json 是否存在", latest.events.length > 0 ? "pass" : "fail", "網站有最新情報資料，首頁可以顯示今日事件。", "如果失敗，請到 GitHub Actions 手動執行 Update Intelligence。"),
+    check("schema", "latest.json 格式", "pass", "最新情報格式正確，網站可以安全讀取。", "如果驗證失敗，執行 npm run validate:intelligence 看是哪個欄位壞掉。"),
+    check("status-json", "系統狀態檔", "pass", "data/system/status.json 會告訴 /doctor 每一步是否成功。", "如果網站看不到狀態，確認這個檔案是否被 commit。"),
+    check("github-action-time", "GitHub Actions 更新時間", "pass", `最新批次是 ${latest.runId}，代表更新流程有留下紀錄。`, "如果時間太舊，檢查 Actions schedule 或按 workflow_dispatch 手動跑一次。"),
+    check("all-companies-json", "完整公司清單", companyUniverse && companyUniverse.totalCompanies >= 1000 ? "pass" : "fail", companyUniverse ? `目前公司清單有 ${companyUniverse.totalCompanies} 家。` : "找不到公司 universe 狀態。", "如果少於 1000 家，先執行 npm run update:companies，再執行 npm run validate:companies。"),
+    check("company-universe-twse", "上市公司數", companyUniverse && companyUniverse.twseCount > 0 ? "pass" : "fail", companyUniverse ? `上市公司 ${companyUniverse.twseCount} 家。` : "無上市公司統計。", "如果為 0，檢查 TWSE ISIN 來源是否抓取成功。"),
+    check("company-universe-tpex", "上櫃公司數", companyUniverse && companyUniverse.tpexCount > 0 ? "pass" : "fail", companyUniverse ? `上櫃公司 ${companyUniverse.tpexCount} 家。` : "無上櫃公司統計。", "如果為 0，檢查 TPEx ISIN 來源是否抓取成功。"),
+    check("required-tickers", "常見公司是否存在", requiredTickers.every((ticker) => presentTickers.has(ticker)) ? "pass" : "fail", "檢查台積電、鴻海、廣達、台達電、長榮、國泰金是否都在清單中。", "如果缺少，代表公司清單解析不完整，請重新跑 update:companies。"),
+    check("company-universe-updated", "公司清單更新時間", companyUniverse?.updatedAt ? "pass" : "warning", companyUniverse?.updatedAt ? `公司清單更新於 ${companyUniverse.updatedAt}。` : "沒有公司清單更新時間。", "如果時間太舊，手動跑 GitHub Actions 或 npm run update:companies。"),
+    check("source-count", "情報來源數", latest.systemStatus.sourceCount >= 12 ? "pass" : "warning", `已設定 ${latest.systemStatus.sourceCount} 個公開來源。`, "如果來源太少，補充 src/data/sources.ts。"),
+    check("article-count", "來源文章數", latest.systemStatus.articleCount > 0 ? "pass" : "fail", `本次整理 ${latest.systemStatus.articleCount} 筆來源紀錄。`, "如果為 0，檢查公開來源是否改版或網路是否失敗。"),
+    check("event-count", "今日事件數", latest.systemStatus.eventCount > 0 ? "pass" : "fail", `本次產生 ${latest.systemStatus.eventCount} 個事件。`, "如果為 0，檢查 keyword classifier 是否過度嚴格。"),
+    check("company-impact-count", "受影響公司數", latest.systemStatus.companyImpactCount > 0 ? "pass" : "warning", `本次整理 ${latest.systemStatus.companyImpactCount} 筆公司影響。`, "如果偏低，檢查 supplyChainMapper 是否有讀到完整公司清單。"),
+    check("rule-engine", "規則引擎", "pass", "分類、供應鏈對應、影響評分與研究員觀點都已執行。", "如果分類不準，調整 src/lib/rules 裡的規則。"),
+    check("local-ai", "Windows 本機 AI", localAiStatus === "reachable" ? "pass" : "warning", localAiStatus === "disabled" ? "沒有啟用本機 AI，網站會使用規則引擎，這是正常狀態。" : `Local AI 狀態：${localAiStatus}。`, "需要本機 AI 時，設定 LOCAL_AI_ENABLED=true 與 Ollama 或 LM Studio。"),
+    check("ollama", "Ollama endpoint", localAiStatus === "reachable" ? "pass" : "warning", process.env.OLLAMA_BASE_URL ? `OLLAMA_BASE_URL=${process.env.OLLAMA_BASE_URL}` : "Ollama 沒有設定；規則引擎仍可完整運作。", "需要時設定 OLLAMA_BASE_URL=http://localhost:11434。"),
     check(
       "lm-studio",
       "LM Studio endpoint",
@@ -383,11 +407,12 @@ async function buildUpdaterStatus(latest: IntelligenceData): Promise<UpdaterStat
       lmStudio.message,
       "需要時開啟 LM Studio local server。"
     ),
-    check("no-apple", "no Apple dependency", "pass", "未使用 Apple Shortcuts、Apple Intelligence 或 iCloud。", "Windows 使用者可直接用 GitHub、Vercel、瀏覽器與 pnpm。"),
-    check("no-openai-key", "no OpenAI API key required", "pass", "未讀取 OPENAI_API_KEY，也沒有 OpenAI API 呼叫。", "ChatGPT 手動加強只產生 prompt 與 localStorage 匯入。"),
-    check("no-supabase", "no Supabase required", "pass", "資料以 JSON 檔案與 localStorage 保存。", "不需建立 database 或 server-side secret。"),
-    check("no-paid-api", "no paid API required", "pass", "更新器只抓公開網頁、RSS 或 fallback。", "若新增來源，避免付費 API 與 secret。"),
-    check("vercel-build", "Vercel deployment build time", "warning", "Vercel build time 由部署平台顯示；本檔記錄資料更新時間。", "若網站未更新，檢查 GitHub commit 與 Vercel redeploy。")
+    check("company-source-status", "官方公司來源狀態", companyUniverse?.status === "ok" ? "pass" : "warning", companyUniverse?.parseErrors.length ? `有 ${companyUniverse.parseErrors.length} 個公司來源警訊，系統會 fallback。` : "TWSE / TPEx ISIN 公司來源沒有記錄錯誤。", "如果有警訊，先看 data/taiwan-companies/summary.json 的 parseErrors。"),
+    check("no-apple", "不依賴 Apple", "pass", "沒有使用 Apple Shortcuts、Apple Intelligence 或 iCloud。", "Windows 使用者可直接用 GitHub、Vercel、瀏覽器與 npm。"),
+    check("no-openai-key", "不需要 OpenAI API key", "pass", "沒有讀取 OPENAI_API_KEY，也沒有 OpenAI API 呼叫。", "ChatGPT 手動加強只產生 prompt 與 localStorage 匯入。"),
+    check("no-supabase", "不需要 Supabase", "pass", "資料以 JSON 檔案與 localStorage 保存。", "不需要 database 或 server-side secret。"),
+    check("no-paid-api", "不需要付費 API", "pass", "更新器只使用公開網頁、RSS、官方 ISIN 與 fallback。", "新增來源時避免付費 API 與 secret。"),
+    check("vercel-build", "Vercel 部署狀態", "warning", "Vercel build time 由部署平台顯示；這裡記錄資料更新時間。", "如果網站沒更新，檢查 GitHub Actions 是否 commit、Vercel 是否 redeploy。")
   ];
 
   return {
@@ -402,6 +427,7 @@ async function buildUpdaterStatus(latest: IntelligenceData): Promise<UpdaterStat
       message: localAiStatus === "reachable" ? "Local AI enhancement succeeded." : "Rule-based manager view is active."
     },
     diagnostics,
+    companyUniverse,
     systemStatus: latest.systemStatus
   };
 }

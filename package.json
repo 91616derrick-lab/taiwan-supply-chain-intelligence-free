@@ -5,6 +5,8 @@
   "description": "Free rule-based Taiwan supply-chain investment intelligence dashboard with GitHub Actions updates and no paid APIs.",
   "scripts": {
     "dev": "next dev",
+    "update:companies": "tsx scripts/update-taiwan-companies.ts",
+    "validate:companies": "tsx scripts/validate-taiwan-companies.ts",
     "update:intelligence": "tsx scripts/fetch-intelligence.ts",
     "validate:intelligence": "tsx scripts/validate-intelligence.ts",
     "typecheck": "tsc --noEmit",

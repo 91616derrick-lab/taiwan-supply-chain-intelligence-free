@@ -4,6 +4,7 @@ import type {
   ImpactMagnitude,
   ResearchPriority
 } from "@/src/lib/schemas/intelligenceSchema";
+import { directionText } from "@/src/lib/beginner/beginnerCopy";
 
 export function cx(...classes: Array<string | false | null | undefined>) {
   return classes.filter(Boolean).join(" ");
@@ -41,14 +42,15 @@ export function Badge({
   tone = "neutral"
 }: {
   children: React.ReactNode;
-  tone?: "neutral" | "green" | "red" | "amber" | "blue";
+  tone?: "neutral" | "green" | "red" | "amber" | "blue" | "purple";
 }) {
   const tones = {
     neutral: "border-terminal-line text-terminal-muted",
     green: "border-terminal-green/60 text-terminal-green",
     red: "border-terminal-red/60 text-terminal-red",
     amber: "border-terminal-amber/60 text-terminal-amber",
-    blue: "border-terminal-blue/60 text-terminal-blue"
+    blue: "border-terminal-blue/60 text-terminal-blue",
+    purple: "border-terminal-purple/60 text-terminal-purple"
   };
 
   return (
@@ -60,7 +62,7 @@ export function Badge({
 
 export function DirectionChip({ direction }: { direction: ImpactDirection }) {
   const tone = direction === "positive" ? "green" : direction === "negative" ? "red" : direction === "mixed" ? "amber" : "neutral";
-  return <Badge tone={tone}>{direction}</Badge>;
+  return <Badge tone={tone}>{directionText(direction)}</Badge>;
 }
 
 export function PriorityBadge({ priority }: { priority: ResearchPriority }) {

@@ -9,6 +9,17 @@ export const impactDirectionSchema = z.enum([
 
 export const impactMagnitudeSchema = z.enum(["low", "medium", "high"]);
 export const researchPrioritySchema = z.enum(["low", "medium", "high"]);
+export const companyEvidenceLevelSchema = z.enum(["curated_match", "keyword_match", "industry_match"]);
+
+export const companyUniverseStatusSchema = z.object({
+  status: z.enum(["ok", "warning", "failed"]),
+  totalCompanies: z.number().int().nonnegative(),
+  twseCount: z.number().int().nonnegative(),
+  tpexCount: z.number().int().nonnegative(),
+  updatedAt: z.string(),
+  sourceUrls: z.array(z.string()),
+  parseErrors: z.array(z.string())
+});
 
 export const engineSchema = z.object({
   mode: z.enum(["rule_based", "local_ai_enhanced"]),
@@ -29,6 +40,7 @@ export const systemStatusSchema = z.object({
   articleCount: z.number().int().nonnegative(),
   eventCount: z.number().int().nonnegative(),
   companyImpactCount: z.number().int().nonnegative(),
+  companyUniverse: companyUniverseStatusSchema.optional(),
   errors: z.array(statusErrorSchema)
 });
 
@@ -61,8 +73,11 @@ export const eventSchema = z.object({
       companyName: z.string(),
       ticker: z.string(),
       exchange: z.enum(["TWSE", "TPEx"]),
+      market: z.enum(["上市", "上櫃"]).optional(),
       industry: z.string(),
-      supplyChainRole: z.string()
+      supplyChainRole: z.string(),
+      isCurated: z.boolean().optional(),
+      evidenceLevel: companyEvidenceLevelSchema.optional()
     })
   ),
   taiwanRelevanceScore: z.number().min(0).max(100),
@@ -80,8 +95,11 @@ export const companyImpactSchema = z.object({
   companyName: z.string(),
   ticker: z.string(),
   exchange: z.enum(["TWSE", "TPEx"]),
+  market: z.enum(["上市", "上櫃"]).optional(),
   industry: z.string(),
   supplyChainRole: z.string(),
+  isCurated: z.boolean().optional(),
+  evidenceLevel: companyEvidenceLevelSchema.optional(),
   impactDirection: impactDirectionSchema,
   impactMagnitude: impactMagnitudeSchema,
   researchPriority: researchPrioritySchema,
@@ -126,6 +144,7 @@ export const updaterStatusSchema = z.object({
     message: z.string()
   }),
   diagnostics: z.array(diagnosticCheckSchema),
+  companyUniverse: companyUniverseStatusSchema.optional(),
   systemStatus: systemStatusSchema
 });
 
@@ -147,6 +166,7 @@ export const intelligenceSchema = z.object({
 export type ImpactDirection = z.infer<typeof impactDirectionSchema>;
 export type ImpactMagnitude = z.infer<typeof impactMagnitudeSchema>;
 export type ResearchPriority = z.infer<typeof researchPrioritySchema>;
+export type CompanyEvidenceLevel = z.infer<typeof companyEvidenceLevelSchema>;
 export type IntelligenceData = z.infer<typeof intelligenceSchema>;
 export type IntelligenceEvent = z.infer<typeof eventSchema>;
 export type CompanyImpact = z.infer<typeof companyImpactSchema>;

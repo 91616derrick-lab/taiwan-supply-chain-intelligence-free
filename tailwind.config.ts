@@ -19,7 +19,8 @@ const config: Config = {
           amber: "#d7a84f",
           green: "#60b579",
           red: "#d96c6c",
-          blue: "#6aa9d8"
+          blue: "#6aa9d8",
+          purple: "#a78bfa"
         }
       },
       fontFamily: {
