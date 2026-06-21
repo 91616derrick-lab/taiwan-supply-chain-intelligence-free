@@ -1,0 +1,46 @@
+name: Update Intelligence
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Taiwan 07:30 = UTC 23:30 previous day
+    - cron: "30 23 * * *"
+    # Taiwan 21:00 = UTC 13:00
+    - cron: "0 13 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-intelligence:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Update intelligence data
+        run: pnpm update:intelligence
+
+      - name: Validate intelligence data
+        run: pnpm validate:intelligence
+
+      - name: Commit updated intelligence files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update intelligence data"
+          file_pattern: data/intelligence/latest.json data/intelligence/history/*.json data/system/status.json
