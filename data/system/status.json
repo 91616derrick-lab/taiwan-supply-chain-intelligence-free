@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T15:58:48.984Z",
-  "runId": "tw-2026-06-21-2358",
-  "runType": "evening",
+  "generatedAt": "2026-06-21T16:08:08.185Z",
+  "runId": "tw-2026-06-22-0008",
+  "runType": "manual",
   "localAi": {
     "enabled": false,
     "provider": "none",
@@ -35,7 +35,7 @@
       "id": "github-action-time",
       "label": "GitHub Actions 更新時間",
       "status": "pass",
-      "description": "最新批次是 tw-2026-06-21-2358，代表更新流程有留下紀錄。",
+      "description": "最新批次是 tw-2026-06-22-0008，代表更新流程有留下紀錄。",
       "nextAction": "如果時間太舊，檢查 Actions schedule 或按 workflow_dispatch 手動跑一次。"
     },
     {
@@ -207,37 +207,37 @@
         "sourceId": "reuters-tech",
         "scope": "source_fetch",
         "message": "fetch failed",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T16:08:08.185Z"
       },
       {
         "sourceId": "tsmc-pr",
         "scope": "source_fetch",
         "message": "HTTP 403",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T16:08:08.185Z"
       },
       {
         "sourceId": "nvidia-news",
         "scope": "source_fetch",
         "message": "No parseable articles found",
-        "at": "2026-06-21T15:58:48.984Z"
-      },
-      {
-        "sourceId": "trendforce",
-        "scope": "source_fetch",
-        "message": "HTTP 404",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T16:08:08.185Z"
       },
       {
         "sourceId": "eia-today",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T16:08:08.185Z"
+      },
+      {
+        "sourceId": "trendforce",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T16:08:08.185Z"
       },
       {
         "sourceId": "amd-news",
         "scope": "source_fetch",
         "message": "The operation was aborted due to timeout",
-        "at": "2026-06-21T15:58:48.984Z"
+        "at": "2026-06-21T16:08:08.185Z"
       }
     ]
   }
