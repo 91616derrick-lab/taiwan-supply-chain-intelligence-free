@@ -1,0 +1,185 @@
+{
+  "generatedAt": "2026-06-21T14:50:28.767Z",
+  "runId": "tw-2026-06-21-2250",
+  "runType": "evening",
+  "localAi": {
+    "enabled": false,
+    "provider": "none",
+    "model": null,
+    "status": "disabled",
+    "message": "Rule-based manager view is active."
+  },
+  "diagnostics": [
+    {
+      "id": "latest-json",
+      "label": "latest.json",
+      "status": "pass",
+      "description": "latest.json 已產生並包含事件。",
+      "nextAction": "若失敗，執行 pnpm update:intelligence。"
+    },
+    {
+      "id": "schema",
+      "label": "latest.json schema",
+      "status": "pass",
+      "description": "latest.json 通過 zod schema。",
+      "nextAction": "若未通過，執行 pnpm validate:intelligence 查看欄位錯誤。"
+    },
+    {
+      "id": "status-json",
+      "label": "data/system/status.json",
+      "status": "pass",
+      "description": "status.json 會與本次更新一起寫出。",
+      "nextAction": "若網站未顯示，確認檔案是否被 commit。"
+    },
+    {
+      "id": "github-action-time",
+      "label": "GitHub Actions update time",
+      "status": "pass",
+      "description": "最新 runId: tw-2026-06-21-2250",
+      "nextAction": "若時間過舊，檢查 Actions schedule 或手動 workflow_dispatch。"
+    },
+    {
+      "id": "source-count",
+      "label": "source count",
+      "status": "pass",
+      "description": "已設定 13 個來源。",
+      "nextAction": "至少維持 12 類公開來源。"
+    },
+    {
+      "id": "article-count",
+      "label": "article count",
+      "status": "pass",
+      "description": "本次產生 29 篇來源紀錄。",
+      "nextAction": "若為 0，檢查來源抓取或 fallback。"
+    },
+    {
+      "id": "event-count",
+      "label": "event count",
+      "status": "pass",
+      "description": "本次產生 20 個事件。",
+      "nextAction": "若為 0，檢查 classifier。"
+    },
+    {
+      "id": "company-impact-count",
+      "label": "company impact count",
+      "status": "pass",
+      "description": "本次產生 55 筆公司影響。",
+      "nextAction": "若偏低，檢查 supplyChainMapper。"
+    },
+    {
+      "id": "company-universe",
+      "label": "Taiwan company universe count",
+      "status": "pass",
+      "description": "公司 universe 目前 142 家。",
+      "nextAction": "若低於 120，擴充 src/data/taiwanCompanies.ts。"
+    },
+    {
+      "id": "rule-engine",
+      "label": "rule engine status",
+      "status": "pass",
+      "description": "keyword classifier、mapper、scorer、manager view 已執行。",
+      "nextAction": "若分類不準，調整 src/lib/rules。"
+    },
+    {
+      "id": "local-ai",
+      "label": "Windows local AI optional status",
+      "status": "warning",
+      "description": "Local AI 狀態：disabled。",
+      "nextAction": "未設定也可正常使用 rule-based 模式。"
+    },
+    {
+      "id": "ollama",
+      "label": "Ollama endpoint",
+      "status": "warning",
+      "description": "Ollama not configured.",
+      "nextAction": "需要時設定 LOCAL_AI_ENABLED=true 與 OLLAMA_BASE_URL。"
+    },
+    {
+      "id": "lm-studio",
+      "label": "LM Studio endpoint",
+      "status": "warning",
+      "description": "LOCAL_AI_ENABLED is not true.",
+      "nextAction": "需要時開啟 LM Studio local server。"
+    },
+    {
+      "id": "no-apple",
+      "label": "no Apple dependency",
+      "status": "pass",
+      "description": "未使用 Apple Shortcuts、Apple Intelligence 或 iCloud。",
+      "nextAction": "Windows 使用者可直接用 GitHub、Vercel、瀏覽器與 pnpm。"
+    },
+    {
+      "id": "no-openai-key",
+      "label": "no OpenAI API key required",
+      "status": "pass",
+      "description": "未讀取 OPENAI_API_KEY，也沒有 OpenAI API 呼叫。",
+      "nextAction": "ChatGPT 手動加強只產生 prompt 與 localStorage 匯入。"
+    },
+    {
+      "id": "no-supabase",
+      "label": "no Supabase required",
+      "status": "pass",
+      "description": "資料以 JSON 檔案與 localStorage 保存。",
+      "nextAction": "不需建立 database 或 server-side secret。"
+    },
+    {
+      "id": "no-paid-api",
+      "label": "no paid API required",
+      "status": "pass",
+      "description": "更新器只抓公開網頁、RSS 或 fallback。",
+      "nextAction": "若新增來源，避免付費 API 與 secret。"
+    },
+    {
+      "id": "vercel-build",
+      "label": "Vercel deployment build time",
+      "status": "warning",
+      "description": "Vercel build time 由部署平台顯示；本檔記錄資料更新時間。",
+      "nextAction": "若網站未更新，檢查 GitHub commit 與 Vercel redeploy。"
+    }
+  ],
+  "systemStatus": {
+    "ok": true,
+    "sourceCount": 13,
+    "articleCount": 29,
+    "eventCount": 20,
+    "companyImpactCount": 55,
+    "errors": [
+      {
+        "sourceId": "reuters-tech",
+        "scope": "source_fetch",
+        "message": "fetch failed",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "tsmc-pr",
+        "scope": "source_fetch",
+        "message": "HTTP 403",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "eia-today",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "trendforce",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "nvidia-news",
+        "scope": "source_fetch",
+        "message": "No parseable articles found",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "amd-news",
+        "scope": "source_fetch",
+        "message": "The operation was aborted due to timeout",
+        "at": "2026-06-21T14:50:28.767Z"
+      }
+    ]
+  }
+}

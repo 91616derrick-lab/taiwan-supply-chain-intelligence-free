@@ -1,0 +1,4821 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-06-21T14:50:28.767Z",
+  "runId": "tw-2026-06-21-2250",
+  "runType": "evening",
+  "engine": {
+    "mode": "rule_based",
+    "localAiEnabled": false,
+    "localAiModel": null
+  },
+  "systemStatus": {
+    "ok": true,
+    "sourceCount": 13,
+    "articleCount": 29,
+    "eventCount": 20,
+    "companyImpactCount": 55,
+    "errors": [
+      {
+        "sourceId": "reuters-tech",
+        "scope": "source_fetch",
+        "message": "fetch failed",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "tsmc-pr",
+        "scope": "source_fetch",
+        "message": "HTTP 403",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "eia-today",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "trendforce",
+        "scope": "source_fetch",
+        "message": "HTTP 404",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "nvidia-news",
+        "scope": "source_fetch",
+        "message": "No parseable articles found",
+        "at": "2026-06-21T14:50:28.767Z"
+      },
+      {
+        "sourceId": "amd-news",
+        "scope": "source_fetch",
+        "message": "The operation was aborted due to timeout",
+        "at": "2026-06-21T14:50:28.767Z"
+      }
+    ]
+  },
+  "executiveSummary": "本次情報以規則引擎整理公開來源，最高優先序主題為 SEMI EXPORT CONTROL、TSMC CAPEX、TSMC CAPEX。所有內容僅供研究與教育用途，不構成個人化投資建議。 本次有 6 個來源或本機 AI 警訊，已寫入 /doctor。",
+  "events": [
+    {
+      "id": "tw-2026-06-21-2250-event-01",
+      "category": "SEMI_EXPORT_CONTROL",
+      "title": "Semiconductor news source temporarily unavailable",
+      "url": "https://feeds.reuters.com/reuters/technologyNews",
+      "publisher": "Reuters",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "whyItMatters": "此事件可能改變 semiconductor、equipment、advanced process、IC design 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "semiconductor",
+      "affectedIndustries": [
+        "semiconductor",
+        "equipment",
+        "advanced process",
+        "IC design"
+      ],
+      "supplyChainNodes": [
+        "advanced logic",
+        "EDA and ASIC",
+        "fab equipment",
+        "specialty materials"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "聯發科",
+          "ticker": "2454",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "mobile and edge AI SoC design"
+        },
+        {
+          "companyName": "世芯-KY",
+          "ticker": "3661",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "custom ASIC and advanced packaging design"
+        },
+        {
+          "companyName": "創意",
+          "ticker": "3443",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "ASIC design service"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "辛耘",
+          "ticker": "3583",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "semiconductor equipment and service"
+        },
+        {
+          "companyName": "崇越",
+          "ticker": "5434",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "materials and equipment channel"
+        },
+        {
+          "companyName": "聯電",
+          "ticker": "2303",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "mature-node foundry"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        }
+      ],
+      "taiwanRelevanceScore": 90,
+      "marketRelevanceScore": 83,
+      "confidenceScore": 72,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "license scope",
+        "China revenue exposure",
+        "advanced-node restrictions",
+        "customer inventory"
+      ],
+      "sourceIds": [
+        "reuters-tech"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-02",
+      "category": "TSMC_CAPEX",
+      "title": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
+      "url": "https://www.semiconductor-digest.com/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:43:11.000Z",
+      "summary": "SK hynix Inc. announced today that it has shipped samples of HBM4E, a next-generation DRAM for AI, to major customers. The post SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217; appeared first on Semiconductor Digest .",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "semiconductor-digest"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-03",
+      "category": "TSMC_CAPEX",
+      "title": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
+      "url": "https://www.semiconductor-digest.com/brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:40:36.000Z",
+      "summary": "Brewer Science, Inc. today announced it has entered into an agreement to acquire the semiconductor chemicals business line of Heraeus Epurio, a recognized technology leader in ultrapure electronic chemicals used in semiconductor manufacturing. The post Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio appeared first on Semiconductor Digest .",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "semiconductor-digest"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-04",
+      "category": "TSMC_CAPEX",
+      "title": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
+      "url": "https://www.semiconductor-digest.com/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:32:33.000Z",
+      "summary": "Intel Corporation today announced the appointment of Seok-Hee Lee as executive vice president of Intel Foundry, reporting directly to CEO Lip-Bu Tan. The post Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing appeared first on Semiconductor Digest .",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "semiconductor-digest"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-05",
+      "category": "TSMC_CAPEX",
+      "title": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
+      "url": "https://www.semiconductor-digest.com/nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:28:07.000Z",
+      "summary": "Patti will describe how advanced packaging technology is now the enabling factor for a renaissance in leading edge semiconductor design and manufacturing. The post NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop appeared first on Semiconductor Digest .",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "semiconductor-digest"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-06",
+      "category": "TSMC_CAPEX",
+      "title": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
+      "url": "https://www.semiconductor-digest.com/ais-next-power-challenge-is-inside-the-delivery-path/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ais-next-power-challenge-is-inside-the-delivery-path",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T12:59:00.000Z",
+      "summary": "As AI workloads scale rapidly, power delivery is emerging as a critical bottleneck, with inefficiencies in the path from grid to transistor demanding new approaches to on-chip and near-chip power conversion. The post AI&#8217;s Next Power Challenge Is Inside the Delivery Path appeared first on Semiconductor Digest .",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "semiconductor-digest"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-07",
+      "category": "NVIDIA_SUPPLY_CHAIN",
+      "title": "NVIDIA newsroom feed unavailable",
+      "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "whyItMatters": "此事件可能改變 AI accelerator、advanced packaging、server ODM、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "Nvidia / AMD / Broadcom",
+      "affectedIndustries": [
+        "AI accelerator",
+        "advanced packaging",
+        "server ODM",
+        "PCB",
+        "networking"
+      ],
+      "supplyChainNodes": [
+        "accelerator platform",
+        "CoWoS packaging",
+        "GPU server board",
+        "switching fabric"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        },
+        {
+          "companyName": "京元電子",
+          "ticker": "2449",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "IC testing"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "緯創",
+          "ticker": "3231",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "AI server ODM and system assembly"
+        },
+        {
+          "companyName": "緯穎",
+          "ticker": "6669",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "cloud server ODM"
+        },
+        {
+          "companyName": "金像電",
+          "ticker": "2368",
+          "exchange": "TWSE",
+          "industry": "PCB / ABF / CCL",
+          "supplyChainRole": "server PCB"
+        },
+        {
+          "companyName": "台光電",
+          "ticker": "2383",
+          "exchange": "TWSE",
+          "industry": "PCB / ABF / CCL",
+          "supplyChainRole": "copper clad laminate"
+        },
+        {
+          "companyName": "智邦",
+          "ticker": "2345",
+          "exchange": "TWSE",
+          "industry": "networking",
+          "supplyChainRole": "switches and data-center networking"
+        },
+        {
+          "companyName": "雙鴻",
+          "ticker": "3324",
+          "exchange": "TPEx",
+          "industry": "thermal",
+          "supplyChainRole": "server thermal modules"
+        },
+        {
+          "companyName": "聯發科",
+          "ticker": "2454",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "mobile and edge AI SoC design"
+        },
+        {
+          "companyName": "瑞昱",
+          "ticker": "2379",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "networking and PC controller IC"
+        }
+      ],
+      "taiwanRelevanceScore": 94,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 78,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "NVIDIA platform timing",
+        "CoWoS capacity",
+        "networking mix",
+        "rack-scale power draw"
+      ],
+      "sourceIds": [
+        "nvidia-news"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-08",
+      "category": "NVIDIA_SUPPLY_CHAIN",
+      "title": "AMD newsroom feed unavailable",
+      "url": "https://www.amd.com/en/newsroom/rss.xml",
+      "publisher": "AMD",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "whyItMatters": "此事件可能改變 AI accelerator、advanced packaging、server ODM、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "Nvidia / AMD / Broadcom",
+      "affectedIndustries": [
+        "AI accelerator",
+        "advanced packaging",
+        "server ODM",
+        "PCB",
+        "networking"
+      ],
+      "supplyChainNodes": [
+        "accelerator platform",
+        "CoWoS packaging",
+        "GPU server board",
+        "switching fabric"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        },
+        {
+          "companyName": "京元電子",
+          "ticker": "2449",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "IC testing"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "緯創",
+          "ticker": "3231",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "AI server ODM and system assembly"
+        },
+        {
+          "companyName": "緯穎",
+          "ticker": "6669",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "cloud server ODM"
+        },
+        {
+          "companyName": "金像電",
+          "ticker": "2368",
+          "exchange": "TWSE",
+          "industry": "PCB / ABF / CCL",
+          "supplyChainRole": "server PCB"
+        },
+        {
+          "companyName": "台光電",
+          "ticker": "2383",
+          "exchange": "TWSE",
+          "industry": "PCB / ABF / CCL",
+          "supplyChainRole": "copper clad laminate"
+        },
+        {
+          "companyName": "智邦",
+          "ticker": "2345",
+          "exchange": "TWSE",
+          "industry": "networking",
+          "supplyChainRole": "switches and data-center networking"
+        },
+        {
+          "companyName": "雙鴻",
+          "ticker": "3324",
+          "exchange": "TPEx",
+          "industry": "thermal",
+          "supplyChainRole": "server thermal modules"
+        },
+        {
+          "companyName": "聯發科",
+          "ticker": "2454",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "mobile and edge AI SoC design"
+        },
+        {
+          "companyName": "瑞昱",
+          "ticker": "2379",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "networking and PC controller IC"
+        }
+      ],
+      "taiwanRelevanceScore": 94,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 78,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "NVIDIA platform timing",
+        "CoWoS capacity",
+        "networking mix",
+        "rack-scale power draw"
+      ],
+      "sourceIds": [
+        "amd-news"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-09",
+      "category": "TSMC_CAPEX",
+      "title": "TSMC press page metadata unavailable",
+      "url": "https://pr.tsmc.com/english/news?type=press",
+      "publisher": "TSMC",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "whyItMatters": "此事件可能改變 foundry、equipment、materials、advanced packaging 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "affectedIndustries": [
+        "foundry",
+        "equipment",
+        "materials",
+        "advanced packaging"
+      ],
+      "supplyChainNodes": [
+        "fab construction",
+        "EUV support",
+        "cleanroom",
+        "wafer and chemicals",
+        "CoWoS capacity"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "環球晶",
+          "ticker": "6488",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "silicon wafer supplier"
+        },
+        {
+          "companyName": "家登",
+          "ticker": "3680",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "EUV pod and wafer carrier"
+        },
+        {
+          "companyName": "帆宣",
+          "ticker": "6196",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "fab facility engineering"
+        },
+        {
+          "companyName": "漢唐",
+          "ticker": "2404",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom and fab engineering"
+        },
+        {
+          "companyName": "亞翔",
+          "ticker": "6139",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "cleanroom construction"
+        },
+        {
+          "companyName": "中砂",
+          "ticker": "1560",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "CMP diamond disk and materials"
+        },
+        {
+          "companyName": "三福化",
+          "ticker": "4755",
+          "exchange": "TWSE",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "electronic chemicals and specialty gas"
+        },
+        {
+          "companyName": "均華",
+          "ticker": "6640",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "advanced packaging equipment"
+        },
+        {
+          "companyName": "弘塑",
+          "ticker": "3131",
+          "exchange": "TPEx",
+          "industry": "semiconductor equipment and materials",
+          "supplyChainRole": "wet process equipment"
+        },
+        {
+          "companyName": "力旺",
+          "ticker": "3529",
+          "exchange": "TPEx",
+          "industry": "IC design",
+          "supplyChainRole": "embedded memory IP"
+        },
+        {
+          "companyName": "日月光投控",
+          "ticker": "3711",
+          "exchange": "TWSE",
+          "industry": "packaging and testing",
+          "supplyChainRole": "OSAT and advanced packaging"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 94,
+      "confidenceScore": 89,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "sourceIds": [
+        "tsmc-pr"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-10",
+      "category": "TAIWAN_GEOPOLITICS",
+      "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
+      "url": "https://www.twse.com.tw/en/news/newsList",
+      "publisher": "TWSE",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
+      "whyItMatters": "此事件可能改變 semiconductor、shipping、finance、export supply chain 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "Taiwan market / MOPS / TWSE",
+      "affectedIndustries": [
+        "semiconductor",
+        "shipping",
+        "finance",
+        "export supply chain"
+      ],
+      "supplyChainNodes": [
+        "risk premium",
+        "insurance",
+        "shipping route",
+        "inventory buffer"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "聯電",
+          "ticker": "2303",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "mature-node foundry"
+        },
+        {
+          "companyName": "聯發科",
+          "ticker": "2454",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "mobile and edge AI SoC design"
+        },
+        {
+          "companyName": "長榮",
+          "ticker": "2603",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "陽明",
+          "ticker": "2609",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 98,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 64,
+      "researchPriority": "high",
+      "impactDirection": "negative",
+      "impactMagnitude": "high",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "risk premium",
+        "insurance cost",
+        "foreign flows",
+        "inventory behavior"
+      ],
+      "sourceIds": [
+        "twse-news"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-11",
+      "category": "FED_RATE",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "whyItMatters": "此事件可能改變 finance、exporters、valuation-sensitive growth、capital equipment 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "affectedIndustries": [
+        "finance",
+        "exporters",
+        "valuation-sensitive growth",
+        "capital equipment"
+      ],
+      "supplyChainNodes": [
+        "discount rate",
+        "bank NIM",
+        "USD funding",
+        "capex hurdle rate"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        },
+        {
+          "companyName": "玉山金",
+          "ticker": "2884",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "兆豐金",
+          "ticker": "2886",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank and financial holding"
+        },
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "第一金",
+          "ticker": "2892",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "合庫金",
+          "ticker": "5880",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 63,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 83,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "sourceIds": [
+        "fed-rss"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-12",
+      "category": "FED_RATE",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
+      "whyItMatters": "此事件可能改變 finance、exporters、valuation-sensitive growth、capital equipment 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "affectedIndustries": [
+        "finance",
+        "exporters",
+        "valuation-sensitive growth",
+        "capital equipment"
+      ],
+      "supplyChainNodes": [
+        "discount rate",
+        "bank NIM",
+        "USD funding",
+        "capex hurdle rate"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        },
+        {
+          "companyName": "玉山金",
+          "ticker": "2884",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "兆豐金",
+          "ticker": "2886",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank and financial holding"
+        },
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "第一金",
+          "ticker": "2892",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "合庫金",
+          "ticker": "5880",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 63,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 83,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "sourceIds": [
+        "fed-rss"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-13",
+      "category": "FED_RATE",
+      "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "whyItMatters": "此事件可能改變 finance、exporters、valuation-sensitive growth、capital equipment 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "affectedIndustries": [
+        "finance",
+        "exporters",
+        "valuation-sensitive growth",
+        "capital equipment"
+      ],
+      "supplyChainNodes": [
+        "discount rate",
+        "bank NIM",
+        "USD funding",
+        "capex hurdle rate"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        },
+        {
+          "companyName": "玉山金",
+          "ticker": "2884",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "兆豐金",
+          "ticker": "2886",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank and financial holding"
+        },
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "第一金",
+          "ticker": "2892",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "合庫金",
+          "ticker": "5880",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 63,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 83,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "sourceIds": [
+        "fed-rss"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-14",
+      "category": "FED_RATE",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve issues FOMC statement",
+      "whyItMatters": "此事件可能改變 finance、exporters、valuation-sensitive growth、capital equipment 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "affectedIndustries": [
+        "finance",
+        "exporters",
+        "valuation-sensitive growth",
+        "capital equipment"
+      ],
+      "supplyChainNodes": [
+        "discount rate",
+        "bank NIM",
+        "USD funding",
+        "capex hurdle rate"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        },
+        {
+          "companyName": "玉山金",
+          "ticker": "2884",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "兆豐金",
+          "ticker": "2886",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank and financial holding"
+        },
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "第一金",
+          "ticker": "2892",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "合庫金",
+          "ticker": "5880",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 63,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 83,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "sourceIds": [
+        "fed-rss"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-15",
+      "category": "FED_RATE",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "whyItMatters": "此事件可能改變 finance、exporters、valuation-sensitive growth、capital equipment 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "affectedIndustries": [
+        "finance",
+        "exporters",
+        "valuation-sensitive growth",
+        "capital equipment"
+      ],
+      "supplyChainNodes": [
+        "discount rate",
+        "bank NIM",
+        "USD funding",
+        "capex hurdle rate"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "國泰金",
+          "ticker": "2882",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and insurance"
+        },
+        {
+          "companyName": "富邦金",
+          "ticker": "2881",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding"
+        },
+        {
+          "companyName": "中信金",
+          "ticker": "2891",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "financial holding and bank"
+        },
+        {
+          "companyName": "元大金",
+          "ticker": "2885",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "brokerage and financial holding"
+        },
+        {
+          "companyName": "玉山金",
+          "ticker": "2884",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "兆豐金",
+          "ticker": "2886",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank and financial holding"
+        },
+        {
+          "companyName": "台積電",
+          "ticker": "2330",
+          "exchange": "TWSE",
+          "industry": "semiconductor foundry",
+          "supplyChainRole": "advanced logic foundry"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "第一金",
+          "ticker": "2892",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        },
+        {
+          "companyName": "合庫金",
+          "ticker": "5880",
+          "exchange": "TWSE",
+          "industry": "finance",
+          "supplyChainRole": "bank-focused financial holding"
+        }
+      ],
+      "taiwanRelevanceScore": 63,
+      "marketRelevanceScore": 90,
+      "confidenceScore": 83,
+      "researchPriority": "high",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "sourceIds": [
+        "fed-rss"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-16",
+      "category": "TRADE_TARIFF",
+      "title": "Press Releases",
+      "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
+      "publisher": "USTR",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
+      "whyItMatters": "此事件可能改變 export supply chain、hardware assembly、shipping、China exposure 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "geopolitics / trade policy",
+      "affectedIndustries": [
+        "export supply chain",
+        "hardware assembly",
+        "shipping",
+        "China exposure"
+      ],
+      "supplyChainNodes": [
+        "tariff pass-through",
+        "country-of-origin",
+        "rerouting",
+        "inventory buffer"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "鴻海",
+          "ticker": "2317",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "EMS and AI server integration"
+        },
+        {
+          "companyName": "廣達",
+          "ticker": "2382",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "hyperscale AI server ODM"
+        },
+        {
+          "companyName": "緯創",
+          "ticker": "3231",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "AI server ODM and system assembly"
+        },
+        {
+          "companyName": "和碩",
+          "ticker": "4938",
+          "exchange": "TWSE",
+          "industry": "AI server ODM / EMS",
+          "supplyChainRole": "EMS and server assembly"
+        },
+        {
+          "companyName": "長榮",
+          "ticker": "2603",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "陽明",
+          "ticker": "2609",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "萬海",
+          "ticker": "2615",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "intra-Asia container shipping"
+        },
+        {
+          "companyName": "聯發科",
+          "ticker": "2454",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "mobile and edge AI SoC design"
+        }
+      ],
+      "taiwanRelevanceScore": 76,
+      "marketRelevanceScore": 73,
+      "confidenceScore": 64,
+      "researchPriority": "medium",
+      "impactDirection": "negative",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "tariff list",
+        "country-of-origin mix",
+        "rerouting cost",
+        "customer pass-through"
+      ],
+      "sourceIds": [
+        "ustr-press"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-17",
+      "category": "DATA_CENTER_POWER",
+      "title": "EIA energy feed unavailable",
+      "url": "https://www.eia.gov/todayinenergy/rss.php",
+      "publisher": "U.S. Energy Information Administration",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "whyItMatters": "此事件可能改變 power supply、thermal、grid equipment、data-center infrastructure 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "energy",
+      "affectedIndustries": [
+        "power supply",
+        "thermal",
+        "grid equipment",
+        "data-center infrastructure"
+      ],
+      "supplyChainNodes": [
+        "power conversion",
+        "UPS",
+        "transformer",
+        "liquid cooling",
+        "grid interconnect"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "台達電",
+          "ticker": "2308",
+          "exchange": "TWSE",
+          "industry": "power supply",
+          "supplyChainRole": "power supply, energy management, data-center power"
+        },
+        {
+          "companyName": "康舒",
+          "ticker": "6282",
+          "exchange": "TWSE",
+          "industry": "power supply",
+          "supplyChainRole": "power supply and energy equipment"
+        },
+        {
+          "companyName": "群電",
+          "ticker": "6412",
+          "exchange": "TWSE",
+          "industry": "power supply",
+          "supplyChainRole": "power adapter and server power"
+        },
+        {
+          "companyName": "奇鋐",
+          "ticker": "3017",
+          "exchange": "TWSE",
+          "industry": "thermal",
+          "supplyChainRole": "thermal solution and fan modules"
+        },
+        {
+          "companyName": "雙鴻",
+          "ticker": "3324",
+          "exchange": "TPEx",
+          "industry": "thermal",
+          "supplyChainRole": "server thermal modules"
+        },
+        {
+          "companyName": "中興電",
+          "ticker": "1513",
+          "exchange": "TWSE",
+          "industry": "energy / petrochemical",
+          "supplyChainRole": "power equipment and grid"
+        },
+        {
+          "companyName": "士電",
+          "ticker": "1503",
+          "exchange": "TWSE",
+          "industry": "energy / petrochemical",
+          "supplyChainRole": "electrical equipment"
+        },
+        {
+          "companyName": "亞力",
+          "ticker": "1514",
+          "exchange": "TWSE",
+          "industry": "energy / petrochemical",
+          "supplyChainRole": "power distribution equipment"
+        },
+        {
+          "companyName": "華城",
+          "ticker": "1519",
+          "exchange": "TWSE",
+          "industry": "energy / petrochemical",
+          "supplyChainRole": "transformers and power systems"
+        },
+        {
+          "companyName": "大亞",
+          "ticker": "1609",
+          "exchange": "TWSE",
+          "industry": "energy / petrochemical",
+          "supplyChainRole": "wire and cable"
+        },
+        {
+          "companyName": "矽力-KY",
+          "ticker": "6415",
+          "exchange": "TWSE",
+          "industry": "IC design",
+          "supplyChainRole": "power management IC"
+        },
+        {
+          "companyName": "光寶科",
+          "ticker": "2301",
+          "exchange": "TWSE",
+          "industry": "power supply",
+          "supplyChainRole": "power supply and optoelectronics"
+        }
+      ],
+      "taiwanRelevanceScore": 86,
+      "marketRelevanceScore": 77,
+      "confidenceScore": 74,
+      "researchPriority": "high",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "power capex",
+        "UPS orders",
+        "thermal design wins",
+        "grid constraints"
+      ],
+      "sourceIds": [
+        "eia-today"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-18",
+      "category": "SHIPPING_DISRUPTION",
+      "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
+      "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
+      "publisher": "FreightWaves",
+      "publishedAt": "2022-05-17T20:12:32.000Z",
+      "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety. The post The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck appeared first on FreightWaves .",
+      "whyItMatters": "此事件可能改變 container shipping、logistics、export supply chain、air cargo 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "shipping",
+      "affectedIndustries": [
+        "container shipping",
+        "logistics",
+        "export supply chain",
+        "air cargo"
+      ],
+      "supplyChainNodes": [
+        "container route",
+        "port handling",
+        "freight forwarding",
+        "air cargo"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "長榮",
+          "ticker": "2603",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "陽明",
+          "ticker": "2609",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "萬海",
+          "ticker": "2615",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "intra-Asia container shipping"
+        },
+        {
+          "companyName": "華航",
+          "ticker": "2610",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "長榮航",
+          "ticker": "2618",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "台驊投控",
+          "ticker": "2636",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "freight forwarding"
+        },
+        {
+          "companyName": "嘉里大榮",
+          "ticker": "2608",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "logistics and trucking"
+        }
+      ],
+      "taiwanRelevanceScore": 72,
+      "marketRelevanceScore": 76,
+      "confidenceScore": 75,
+      "researchPriority": "medium",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "sourceIds": [
+        "freightwaves"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-19",
+      "category": "SHIPPING_DISRUPTION",
+      "title": "Why the Northeast is quietly running out of diesel",
+      "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
+      "publisher": "FreightWaves",
+      "publishedAt": "2022-05-12T15:46:28.000Z",
+      "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates. The post Why the Northeast is quietly running out of diesel appeared first on FreightWaves .",
+      "whyItMatters": "此事件可能改變 container shipping、logistics、export supply chain、air cargo 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "shipping",
+      "affectedIndustries": [
+        "container shipping",
+        "logistics",
+        "export supply chain",
+        "air cargo"
+      ],
+      "supplyChainNodes": [
+        "container route",
+        "port handling",
+        "freight forwarding",
+        "air cargo"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "長榮",
+          "ticker": "2603",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "陽明",
+          "ticker": "2609",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "萬海",
+          "ticker": "2615",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "intra-Asia container shipping"
+        },
+        {
+          "companyName": "華航",
+          "ticker": "2610",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "長榮航",
+          "ticker": "2618",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "台驊投控",
+          "ticker": "2636",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "freight forwarding"
+        },
+        {
+          "companyName": "嘉里大榮",
+          "ticker": "2608",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "logistics and trucking"
+        }
+      ],
+      "taiwanRelevanceScore": 72,
+      "marketRelevanceScore": 76,
+      "confidenceScore": 75,
+      "researchPriority": "medium",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "sourceIds": [
+        "freightwaves"
+      ]
+    },
+    {
+      "id": "tw-2026-06-21-2250-event-20",
+      "category": "SHIPPING_DISRUPTION",
+      "title": "Exclusive: Central Freight Lines to shut down after 96 years",
+      "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
+      "publisher": "FreightWaves",
+      "publishedAt": "2021-12-13T22:15:00.000Z",
+      "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize. The post Exclusive: Central Freight Lines to shut down after 96 years appeared first on FreightWaves .",
+      "whyItMatters": "此事件可能改變 container shipping、logistics、export supply chain、air cargo 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
+      "sourceCategory": "shipping",
+      "affectedIndustries": [
+        "container shipping",
+        "logistics",
+        "export supply chain",
+        "air cargo"
+      ],
+      "supplyChainNodes": [
+        "container route",
+        "port handling",
+        "freight forwarding",
+        "air cargo"
+      ],
+      "likelyAffectedCompanies": [
+        {
+          "companyName": "長榮",
+          "ticker": "2603",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "陽明",
+          "ticker": "2609",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "container shipping"
+        },
+        {
+          "companyName": "萬海",
+          "ticker": "2615",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "intra-Asia container shipping"
+        },
+        {
+          "companyName": "華航",
+          "ticker": "2610",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "長榮航",
+          "ticker": "2618",
+          "exchange": "TWSE",
+          "industry": "airline",
+          "supplyChainRole": "passenger and cargo airline"
+        },
+        {
+          "companyName": "台驊投控",
+          "ticker": "2636",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "freight forwarding"
+        },
+        {
+          "companyName": "嘉里大榮",
+          "ticker": "2608",
+          "exchange": "TWSE",
+          "industry": "shipping",
+          "supplyChainRole": "logistics and trucking"
+        }
+      ],
+      "taiwanRelevanceScore": 72,
+      "marketRelevanceScore": 76,
+      "confidenceScore": 75,
+      "researchPriority": "medium",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "sourceIds": [
+        "freightwaves"
+      ]
+    }
+  ],
+  "companyImpacts": [
+    {
+      "companyName": "台積電",
+      "ticker": "2330",
+      "exchange": "TWSE",
+      "industry": "semiconductor foundry",
+      "supplyChainRole": "advanced logic foundry",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-09",
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "AI_SERVER_DEMAND",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "家登",
+      "ticker": "3680",
+      "exchange": "TPEx",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "EUV pod and wafer carrier",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "帆宣",
+      "ticker": "6196",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "fab facility engineering",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "力旺",
+      "ticker": "3529",
+      "exchange": "TPEx",
+      "industry": "IC design",
+      "supplyChainRole": "embedded memory IP",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "環球晶",
+      "ticker": "6488",
+      "exchange": "TPEx",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "silicon wafer supplier",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "中砂",
+      "ticker": "1560",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "CMP diamond disk and materials",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "漢唐",
+      "ticker": "2404",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "cleanroom and fab engineering",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX"
+      ]
+    },
+    {
+      "companyName": "亞翔",
+      "ticker": "6139",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "cleanroom construction",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX"
+      ]
+    },
+    {
+      "companyName": "三福化",
+      "ticker": "4755",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "electronic chemicals and specialty gas",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "均華",
+      "ticker": "6640",
+      "exchange": "TPEx",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "advanced packaging equipment",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "TSMC_CAPEX"
+      ]
+    },
+    {
+      "companyName": "弘塑",
+      "ticker": "3131",
+      "exchange": "TPEx",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "wet process equipment",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX"
+      ]
+    },
+    {
+      "companyName": "日月光投控",
+      "ticker": "3711",
+      "exchange": "TWSE",
+      "industry": "packaging and testing",
+      "supplyChainRole": "OSAT and advanced packaging",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 89,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-02",
+        "tw-2026-06-21-2250-event-03",
+        "tw-2026-06-21-2250-event-04",
+        "tw-2026-06-21-2250-event-05",
+        "tw-2026-06-21-2250-event-06",
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-09"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "TSMC_CAPEX"
+      ]
+    },
+    {
+      "companyName": "廣達",
+      "ticker": "2382",
+      "exchange": "TWSE",
+      "industry": "AI server ODM / EMS",
+      "supplyChainRole": "hyperscale AI server ODM",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15",
+        "tw-2026-06-21-2250-event-16"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "富邦金",
+      "ticker": "2881",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "FX_USD_TWD"
+      ]
+    },
+    {
+      "companyName": "國泰金",
+      "ticker": "2882",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "financial holding and insurance",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "FX_USD_TWD"
+      ]
+    },
+    {
+      "companyName": "中信金",
+      "ticker": "2891",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "financial holding and bank",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "FX_USD_TWD"
+      ]
+    },
+    {
+      "companyName": "元大金",
+      "ticker": "2885",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "brokerage and financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "TAIWAN_GEOPOLITICS"
+      ]
+    },
+    {
+      "companyName": "玉山金",
+      "ticker": "2884",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "bank-focused financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "FX_USD_TWD"
+      ]
+    },
+    {
+      "companyName": "兆豐金",
+      "ticker": "2886",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "bank and financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE",
+        "FX_USD_TWD"
+      ]
+    },
+    {
+      "companyName": "第一金",
+      "ticker": "2892",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "bank-focused financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE"
+      ]
+    },
+    {
+      "companyName": "合庫金",
+      "ticker": "5880",
+      "exchange": "TWSE",
+      "industry": "finance",
+      "supplyChainRole": "bank-focused financial holding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 83,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-11",
+        "tw-2026-06-21-2250-event-12",
+        "tw-2026-06-21-2250-event-13",
+        "tw-2026-06-21-2250-event-14",
+        "tw-2026-06-21-2250-event-15"
+      ],
+      "sensitivityTags": [
+        "FED_RATE"
+      ]
+    },
+    {
+      "companyName": "聯發科",
+      "ticker": "2454",
+      "exchange": "TWSE",
+      "industry": "IC design",
+      "supplyChainRole": "mobile and edge AI SoC design",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-16"
+      ],
+      "sensitivityTags": [
+        "NVIDIA_SUPPLY_CHAIN",
+        "CHINA_STIMULUS",
+        "COMPANY_EARNINGS"
+      ]
+    },
+    {
+      "companyName": "京元電子",
+      "ticker": "2449",
+      "exchange": "TWSE",
+      "industry": "packaging and testing",
+      "supplyChainRole": "IC testing",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "NVIDIA_SUPPLY_CHAIN",
+        "AI_SERVER_DEMAND"
+      ]
+    },
+    {
+      "companyName": "緯創",
+      "ticker": "3231",
+      "exchange": "TWSE",
+      "industry": "AI server ODM / EMS",
+      "supplyChainRole": "AI server ODM and system assembly",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-16"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "緯穎",
+      "ticker": "6669",
+      "exchange": "TWSE",
+      "industry": "AI server ODM / EMS",
+      "supplyChainRole": "cloud server ODM",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "金像電",
+      "ticker": "2368",
+      "exchange": "TWSE",
+      "industry": "PCB / ABF / CCL",
+      "supplyChainRole": "server PCB",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "台光電",
+      "ticker": "2383",
+      "exchange": "TWSE",
+      "industry": "PCB / ABF / CCL",
+      "supplyChainRole": "copper clad laminate",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "智邦",
+      "ticker": "2345",
+      "exchange": "TWSE",
+      "industry": "networking",
+      "supplyChainRole": "switches and data-center networking",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "雙鴻",
+      "ticker": "3324",
+      "exchange": "TPEx",
+      "industry": "thermal",
+      "supplyChainRole": "server thermal modules",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08",
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "瑞昱",
+      "ticker": "2379",
+      "exchange": "TWSE",
+      "industry": "IC design",
+      "supplyChainRole": "networking and PC controller IC",
+      "impactDirection": "positive",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 78,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-07",
+        "tw-2026-06-21-2250-event-08"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "COMPANY_EARNINGS"
+      ]
+    },
+    {
+      "companyName": "長榮",
+      "ticker": "2603",
+      "exchange": "TWSE",
+      "industry": "shipping",
+      "supplyChainRole": "container shipping",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-16",
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION",
+        "TRADE_TARIFF"
+      ]
+    },
+    {
+      "companyName": "陽明",
+      "ticker": "2609",
+      "exchange": "TWSE",
+      "industry": "shipping",
+      "supplyChainRole": "container shipping",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-10",
+        "tw-2026-06-21-2250-event-16",
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION",
+        "TRADE_TARIFF"
+      ]
+    },
+    {
+      "companyName": "台達電",
+      "ticker": "2308",
+      "exchange": "TWSE",
+      "industry": "power supply",
+      "supplyChainRole": "power supply, energy management, data-center power",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "AI_SERVER_DEMAND",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "康舒",
+      "ticker": "6282",
+      "exchange": "TWSE",
+      "industry": "power supply",
+      "supplyChainRole": "power supply and energy equipment",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "AI_SERVER_DEMAND"
+      ]
+    },
+    {
+      "companyName": "群電",
+      "ticker": "6412",
+      "exchange": "TWSE",
+      "industry": "power supply",
+      "supplyChainRole": "power adapter and server power",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "奇鋐",
+      "ticker": "3017",
+      "exchange": "TWSE",
+      "industry": "thermal",
+      "supplyChainRole": "thermal solution and fan modules",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "中興電",
+      "ticker": "1513",
+      "exchange": "TWSE",
+      "industry": "energy / petrochemical",
+      "supplyChainRole": "power equipment and grid",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "士電",
+      "ticker": "1503",
+      "exchange": "TWSE",
+      "industry": "energy / petrochemical",
+      "supplyChainRole": "electrical equipment",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "亞力",
+      "ticker": "1514",
+      "exchange": "TWSE",
+      "industry": "energy / petrochemical",
+      "supplyChainRole": "power distribution equipment",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "華城",
+      "ticker": "1519",
+      "exchange": "TWSE",
+      "industry": "energy / petrochemical",
+      "supplyChainRole": "transformers and power systems",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "大亞",
+      "ticker": "1609",
+      "exchange": "TWSE",
+      "industry": "energy / petrochemical",
+      "supplyChainRole": "wire and cable",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER"
+      ]
+    },
+    {
+      "companyName": "矽力-KY",
+      "ticker": "6415",
+      "exchange": "TWSE",
+      "industry": "IC design",
+      "supplyChainRole": "power management IC",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "EV_BATTERY"
+      ]
+    },
+    {
+      "companyName": "光寶科",
+      "ticker": "2301",
+      "exchange": "TWSE",
+      "industry": "power supply",
+      "supplyChainRole": "power supply and optoelectronics",
+      "impactDirection": "positive",
+      "impactMagnitude": "medium",
+      "researchPriority": "high",
+      "confidenceScore": 74,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-17"
+      ],
+      "sensitivityTags": [
+        "DATA_CENTER_POWER",
+        "AI_SERVER_DEMAND"
+      ]
+    },
+    {
+      "companyName": "世芯-KY",
+      "ticker": "3661",
+      "exchange": "TWSE",
+      "industry": "IC design",
+      "supplyChainRole": "custom ASIC and advanced packaging design",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 72,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01"
+      ],
+      "sensitivityTags": [
+        "NVIDIA_SUPPLY_CHAIN",
+        "AI_SERVER_DEMAND",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "創意",
+      "ticker": "3443",
+      "exchange": "TWSE",
+      "industry": "IC design",
+      "supplyChainRole": "ASIC design service",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 72,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01"
+      ],
+      "sensitivityTags": [
+        "NVIDIA_SUPPLY_CHAIN",
+        "AI_SERVER_DEMAND",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "辛耘",
+      "ticker": "3583",
+      "exchange": "TWSE",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "semiconductor equipment and service",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 72,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "崇越",
+      "ticker": "5434",
+      "exchange": "TPEx",
+      "industry": "semiconductor equipment and materials",
+      "supplyChainRole": "materials and equipment channel",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 72,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01"
+      ],
+      "sensitivityTags": [
+        "TSMC_CAPEX",
+        "SEMI_EXPORT_CONTROL"
+      ]
+    },
+    {
+      "companyName": "聯電",
+      "ticker": "2303",
+      "exchange": "TWSE",
+      "industry": "semiconductor foundry",
+      "supplyChainRole": "mature-node foundry",
+      "impactDirection": "mixed",
+      "impactMagnitude": "high",
+      "researchPriority": "high",
+      "confidenceScore": 72,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-01",
+        "tw-2026-06-21-2250-event-10"
+      ],
+      "sensitivityTags": [
+        "SEMI_EXPORT_CONTROL",
+        "COMPANY_EARNINGS"
+      ]
+    },
+    {
+      "companyName": "萬海",
+      "ticker": "2615",
+      "exchange": "TWSE",
+      "industry": "shipping",
+      "supplyChainRole": "intra-Asia container shipping",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-16",
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION",
+        "TRADE_TARIFF"
+      ]
+    },
+    {
+      "companyName": "華航",
+      "ticker": "2610",
+      "exchange": "TWSE",
+      "industry": "airline",
+      "supplyChainRole": "passenger and cargo airline",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "長榮航",
+      "ticker": "2618",
+      "exchange": "TWSE",
+      "industry": "airline",
+      "supplyChainRole": "passenger and cargo airline",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION",
+        "ENERGY_PRICE"
+      ]
+    },
+    {
+      "companyName": "台驊投控",
+      "ticker": "2636",
+      "exchange": "TWSE",
+      "industry": "shipping",
+      "supplyChainRole": "freight forwarding",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION"
+      ]
+    },
+    {
+      "companyName": "嘉里大榮",
+      "ticker": "2608",
+      "exchange": "TWSE",
+      "industry": "shipping",
+      "supplyChainRole": "logistics and trucking",
+      "impactDirection": "mixed",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 75,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-18",
+        "tw-2026-06-21-2250-event-19",
+        "tw-2026-06-21-2250-event-20"
+      ],
+      "sensitivityTags": [
+        "SHIPPING_DISRUPTION"
+      ]
+    },
+    {
+      "companyName": "鴻海",
+      "ticker": "2317",
+      "exchange": "TWSE",
+      "industry": "AI server ODM / EMS",
+      "supplyChainRole": "EMS and AI server integration",
+      "impactDirection": "negative",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 64,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-16"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND",
+        "NVIDIA_SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "companyName": "和碩",
+      "ticker": "4938",
+      "exchange": "TWSE",
+      "industry": "AI server ODM / EMS",
+      "supplyChainRole": "EMS and server assembly",
+      "impactDirection": "negative",
+      "impactMagnitude": "medium",
+      "researchPriority": "medium",
+      "confidenceScore": 64,
+      "missingData": [
+        "未納入即時股價與估值資料",
+        "需用公司公告或法說會內容二次確認",
+        "規則引擎不代表個人化投資建議"
+      ],
+      "relatedEventIds": [
+        "tw-2026-06-21-2250-event-16"
+      ],
+      "sensitivityTags": [
+        "AI_SERVER_DEMAND"
+      ]
+    }
+  ],
+  "managerObservations": [
+    {
+      "eventId": "tw-2026-06-21-2250-event-01",
+      "eventTitle": "Semiconductor news source temporarily unavailable",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Semi Export Control，台灣相關分數 90/100。初步影響集中在 semiconductor、equipment、advanced process、IC design，優先檢查 台積電 2330、聯發科 2454、世芯-KY 3661、創意 3443、家登 3680 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，advanced logic、EDA and ASIC、fab equipment 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "license scope",
+        "China revenue exposure",
+        "advanced-node restrictions",
+        "customer inventory"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-02",
+      "eventTitle": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-03",
+      "eventTitle": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-04",
+      "eventTitle": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-05",
+      "eventTitle": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-06",
+      "eventTitle": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-07",
+      "eventTitle": "NVIDIA newsroom feed unavailable",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Nvidia Supply Chain，台灣相關分數 94/100。初步影響集中在 AI accelerator、advanced packaging、server ODM、PCB、networking，優先檢查 台積電 2330、日月光投控 3711、京元電子 2449、廣達 2382、緯創 3231 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，accelerator platform、CoWoS packaging、GPU server board 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "NVIDIA platform timing",
+        "CoWoS capacity",
+        "networking mix",
+        "rack-scale power draw"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-08",
+      "eventTitle": "AMD newsroom feed unavailable",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Nvidia Supply Chain，台灣相關分數 94/100。初步影響集中在 AI accelerator、advanced packaging、server ODM、PCB、networking，優先檢查 台積電 2330、日月光投控 3711、京元電子 2449、廣達 2382、緯創 3231 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，accelerator platform、CoWoS packaging、GPU server board 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "NVIDIA platform timing",
+        "CoWoS capacity",
+        "networking mix",
+        "rack-scale power draw"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-09",
+      "eventTitle": "TSMC press page metadata unavailable",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Tsmc Capex，台灣相關分數 98/100。初步影響集中在 foundry、equipment、materials、advanced packaging，優先檢查 台積電 2330、環球晶 6488、家登 3680、帆宣 6196、漢唐 2404 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，fab construction、EUV support、cleanroom 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "capex guidance",
+        "tool delivery",
+        "CoWoS expansion",
+        "cleanroom orders"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-10",
+      "eventTitle": "TWSE Press Release - Taiwan Stock Exchange Corporation",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Taiwan Geopolitics，台灣相關分數 98/100。初步影響集中在 semiconductor、shipping、finance、export supply chain，優先檢查 台積電 2330、聯電 2303、聯發科 2454、長榮 2603、陽明 2609 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，risk premium、insurance、shipping route 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "risk premium",
+        "insurance cost",
+        "foreign flows",
+        "inventory behavior"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-11",
+      "eventTitle": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Fed Rate，台灣相關分數 63/100。初步影響集中在 finance、exporters、valuation-sensitive growth、capital equipment，優先檢查 國泰金 2882、富邦金 2881、中信金 2891、元大金 2885、玉山金 2884 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，discount rate、bank NIM、USD funding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-12",
+      "eventTitle": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Fed Rate，台灣相關分數 63/100。初步影響集中在 finance、exporters、valuation-sensitive growth、capital equipment，優先檢查 國泰金 2882、富邦金 2881、中信金 2891、元大金 2885、玉山金 2884 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，discount rate、bank NIM、USD funding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-13",
+      "eventTitle": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Fed Rate，台灣相關分數 63/100。初步影響集中在 finance、exporters、valuation-sensitive growth、capital equipment，優先檢查 國泰金 2882、富邦金 2881、中信金 2891、元大金 2885、玉山金 2884 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，discount rate、bank NIM、USD funding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-14",
+      "eventTitle": "Federal Reserve issues FOMC statement",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Fed Rate，台灣相關分數 63/100。初步影響集中在 finance、exporters、valuation-sensitive growth、capital equipment，優先檢查 國泰金 2882、富邦金 2881、中信金 2891、元大金 2885、玉山金 2884 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，discount rate、bank NIM、USD funding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-15",
+      "eventTitle": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Fed Rate，台灣相關分數 63/100。初步影響集中在 finance、exporters、valuation-sensitive growth、capital equipment，優先檢查 國泰金 2882、富邦金 2881、中信金 2891、元大金 2885、玉山金 2884 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，discount rate、bank NIM、USD funding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "US 10Y yield",
+        "DXY",
+        "foreign flows",
+        "bank NIM"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-16",
+      "eventTitle": "Press Releases",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Trade Tariff，台灣相關分數 76/100。初步影響集中在 export supply chain、hardware assembly、shipping、China exposure，優先檢查 鴻海 2317、廣達 2382、緯創 3231、和碩 4938、長榮 2603 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，tariff pass-through、country-of-origin、rerouting 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 medium 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "tariff list",
+        "country-of-origin mix",
+        "rerouting cost",
+        "customer pass-through"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-17",
+      "eventTitle": "EIA energy feed unavailable",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Data Center Power，台灣相關分數 86/100。初步影響集中在 power supply、thermal、grid equipment、data-center infrastructure，優先檢查 台達電 2308、康舒 6282、群電 6412、奇鋐 3017、雙鴻 3324 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，power conversion、UPS、transformer 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 high 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "power capex",
+        "UPS orders",
+        "thermal design wins",
+        "grid constraints"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-18",
+      "eventTitle": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Shipping Disruption，台灣相關分數 72/100。初步影響集中在 container shipping、logistics、export supply chain、air cargo，優先檢查 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，container route、port handling、freight forwarding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 medium 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-19",
+      "eventTitle": "Why the Northeast is quietly running out of diesel",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Shipping Disruption，台灣相關分數 72/100。初步影響集中在 container shipping、logistics、export supply chain、air cargo，優先檢查 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，container route、port handling、freight forwarding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 medium 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    },
+    {
+      "eventId": "tw-2026-06-21-2250-event-20",
+      "eventTitle": "Exclusive: Central Freight Lines to shut down after 96 years",
+      "engine": "rule_based",
+      "managerView": "規則引擎推論：此事件被歸類為 Shipping Disruption，台灣相關分數 72/100。初步影響集中在 container shipping、logistics、export supply chain、air cargo，優先檢查 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618 的訂單、毛利與產能訊號。",
+      "bullCase": "若事件延續且被公司公告或法說會驗證，container route、port handling、freight forwarding 可能形成營收或議價能力支撐。",
+      "bearCase": "若需求遞延、政策限制擴大或成本無法轉嫁，事件可能只帶來短期題材，並壓縮供應鏈毛利。",
+      "baseCase": "在尚未取得完整公司指引前，將此事件視為研究優先序 medium 的監控項，而不是交易結論。",
+      "disconfirmingEvidence": [
+        "公司月營收或接單未跟上事件敘事",
+        "主要客戶延後拉貨或降低資本支出",
+        "同業說法與此事件方向不一致",
+        "價格反應已大幅提前反映且基本面未驗證"
+      ],
+      "indicatorsToMonitor": [
+        "spot freight rates",
+        "port congestion",
+        "air cargo demand",
+        "exporter inventory buffer"
+      ],
+      "suggestedResearchActions": [
+        "回查 MOPS 重大訊息、月營收與法說會簡報",
+        "比較同產業公司是否出現一致性營收或毛利訊號",
+        "追蹤上游價格、交期、庫存與客戶資本支出變化",
+        "把事件與 watchlist 公司逐一建立可驗證假設"
+      ],
+      "riskControls": [
+        "不輸出買進、賣出、持有或目標價",
+        "任何推論都需用公開公告與多來源交叉驗證",
+        "避免把單一新聞直接等同於公司獲利改善",
+        "標記缺失資料，等資料補齊後再提高信心分數"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tw-2026-06-21-2250-source-01",
+      "title": "Semiconductor news source temporarily unavailable",
+      "url": "https://feeds.reuters.com/reuters/technologyNews",
+      "publisher": "Reuters",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "semiconductor",
+      "sourceId": "reuters-tech",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-02",
+      "title": "SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217;",
+      "url": "https://www.semiconductor-digest.com/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:43:11.000Z",
+      "summary": "SK hynix Inc. announced today that it has shipped samples of HBM4E, a next-generation DRAM for AI, to major customers. The post SK hynix Ships Samples of 12-Layer Next-Gen &#8216;HBM4E&#8217; appeared first on Semiconductor Digest .",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "semiconductor-digest",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-03",
+      "title": "Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio",
+      "url": "https://www.semiconductor-digest.com/brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=brewer-science-to-acquire-semiconductor-chemical-business-line-from-heraeus-epurio",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:40:36.000Z",
+      "summary": "Brewer Science, Inc. today announced it has entered into an agreement to acquire the semiconductor chemicals business line of Heraeus Epurio, a recognized technology leader in ultrapure electronic chemicals used in semiconductor manufacturing. The post Brewer Science to Acquire Semiconductor Chemical Business Line from Heraeus Epurio appeared first on Semiconductor Digest .",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "semiconductor-digest",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-04",
+      "title": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
+      "url": "https://www.semiconductor-digest.com/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:32:33.000Z",
+      "summary": "Intel Corporation today announced the appointment of Seok-Hee Lee as executive vice president of Intel Foundry, reporting directly to CEO Lip-Bu Tan. The post Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing appeared first on Semiconductor Digest .",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "semiconductor-digest",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-05",
+      "title": "NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop",
+      "url": "https://www.semiconductor-digest.com/nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nhanced-semiconductors-president-robert-patti-to-deliver-plenary-presentation-at-the-2026-lithography-workshop",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T18:28:07.000Z",
+      "summary": "Patti will describe how advanced packaging technology is now the enabling factor for a renaissance in leading edge semiconductor design and manufacturing. The post NHanced Semiconductors President Robert Patti to Deliver Plenary Presentation at the 2026 Lithography Workshop appeared first on Semiconductor Digest .",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "semiconductor-digest",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-06",
+      "title": "AI&#8217;s Next Power Challenge Is Inside the Delivery Path",
+      "url": "https://www.semiconductor-digest.com/ais-next-power-challenge-is-inside-the-delivery-path/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ais-next-power-challenge-is-inside-the-delivery-path",
+      "publisher": "Semiconductor Digest",
+      "publishedAt": "2026-06-19T12:59:00.000Z",
+      "summary": "As AI workloads scale rapidly, power delivery is emerging as a critical bottleneck, with inefficiencies in the path from grid to transistor demanding new approaches to on-chip and near-chip power conversion. The post AI&#8217;s Next Power Challenge Is Inside the Delivery Path appeared first on Semiconductor Digest .",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "semiconductor-digest",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-07",
+      "title": "NVIDIA newsroom feed unavailable",
+      "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "Nvidia / AMD / Broadcom",
+      "sourceId": "nvidia-news",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-08",
+      "title": "AMD newsroom feed unavailable",
+      "url": "https://www.amd.com/en/newsroom/rss.xml",
+      "publisher": "AMD",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "Nvidia / AMD / Broadcom",
+      "sourceId": "amd-news",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-09",
+      "title": "TSMC press page metadata unavailable",
+      "url": "https://pr.tsmc.com/english/news?type=press",
+      "publisher": "TSMC",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "TSMC / ASML / semiconductor equipment",
+      "sourceId": "tsmc-pr",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-10",
+      "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
+      "url": "https://www.twse.com.tw/en/news/newsList",
+      "publisher": "TWSE",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
+      "sourceCategory": "Taiwan market / MOPS / TWSE",
+      "sourceId": "twse-news",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-11",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "sourceId": "fed-rss",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-12",
+      "title": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "sourceId": "fed-rss",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-13",
+      "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "sourceId": "fed-rss",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-14",
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve issues FOMC statement",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "sourceId": "fed-rss",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-15",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "sourceCategory": "macro / Fed / rates / FX",
+      "sourceId": "fed-rss",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-16",
+      "title": "Press Releases",
+      "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
+      "publisher": "USTR",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
+      "sourceCategory": "geopolitics / trade policy",
+      "sourceId": "ustr-press",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-17",
+      "title": "EIA energy feed unavailable",
+      "url": "https://www.eia.gov/todayinenergy/rss.php",
+      "publisher": "U.S. Energy Information Administration",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "energy",
+      "sourceId": "eia-today",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-18",
+      "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
+      "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
+      "publisher": "FreightWaves",
+      "publishedAt": "2022-05-17T20:12:32.000Z",
+      "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety. The post The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck appeared first on FreightWaves .",
+      "sourceCategory": "shipping",
+      "sourceId": "freightwaves",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-19",
+      "title": "Why the Northeast is quietly running out of diesel",
+      "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
+      "publisher": "FreightWaves",
+      "publishedAt": "2022-05-12T15:46:28.000Z",
+      "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates. The post Why the Northeast is quietly running out of diesel appeared first on FreightWaves .",
+      "sourceCategory": "shipping",
+      "sourceId": "freightwaves",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-20",
+      "title": "Exclusive: Central Freight Lines to shut down after 96 years",
+      "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
+      "publisher": "FreightWaves",
+      "publishedAt": "2021-12-13T22:15:00.000Z",
+      "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize. The post Exclusive: Central Freight Lines to shut down after 96 years appeared first on FreightWaves .",
+      "sourceCategory": "shipping",
+      "sourceId": "freightwaves",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-21",
+      "title": "Warehouse cramming is about to begin — Freightonomics",
+      "url": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
+      "publisher": "FreightWaves",
+      "publishedAt": "2021-08-12T20:10:00.000Z",
+      "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. The post Warehouse cramming is about to begin — Freightonomics appeared first on FreightWaves .",
+      "sourceCategory": "shipping",
+      "sourceId": "freightwaves",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-22",
+      "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
+      "url": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
+      "publisher": "FreightWaves",
+      "publishedAt": "2021-06-27T18:00:00.000Z",
+      "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carriers) The DHL Supply Chain Pricing Power Index uses the analytics and data in FreightWaves SONAR to analyze the market and estimate the negotiating power for [&#8230;] The post Seasonality pushing rejections and rates higher ahead of the Fourth appeared first on FreightWaves .",
+      "sourceCategory": "shipping",
+      "sourceId": "freightwaves",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-23",
+      "title": "Memory market feed unavailable",
+      "url": "https://www.trendforce.com/presscenter/rss",
+      "publisher": "TrendForce",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "Memory market RSS could not be parsed. Track HBM pricing, DRAM cycle, and server memory demand through supplier reports. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
+      "sourceCategory": "memory / HBM / DRAM",
+      "sourceId": "trendforce",
+      "quality": "fallback"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-24",
+      "title": "MOPS metadata unavailable",
+      "url": "https://mops.twse.com.tw/mops/web/index",
+      "publisher": "MOPS",
+      "publishedAt": "2026-06-21T14:50:28.767Z",
+      "summary": "MOPS public website metadata could not be parsed. Company material information remains the primary verification source.",
+      "sourceCategory": "company IR / press release",
+      "sourceId": "mops",
+      "quality": "official"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-25",
+      "title": "Sponsored: BESS Is becoming the bridge between AI data centers and the grid",
+      "url": "https://www.datacenterdynamics.com/en/opinions/bess-is-becoming-the-bridge-between-ai-data-centers-and-the-grid/",
+      "publisher": "Data Center Dynamics",
+      "publishedAt": "2026-06-20T07:00:00.000Z",
+      "summary": "<p data-block-key=\"zi3c6\">Battery energy storage is becoming essential for AI data centers, helping bridge grid constraints, support resilience, and accelerate speed-to-power</p>",
+      "sourceCategory": "hyperscaler capex",
+      "sourceId": "datacenter-dynamics",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-26",
+      "title": "Nuclear physics research lab Jefferson Lab breaks ground on 30,000 sq ft data center",
+      "url": "https://www.datacenterdynamics.com/en/news/nuclear-physics-research-lab-jefferson-lab-breaks-ground-on-30000-sq-ft-data-center/",
+      "publisher": "Data Center Dynamics",
+      "publishedAt": "2026-06-19T17:00:30.000Z",
+      "summary": "<p data-block-key=\"fvinx\">Facility backed by $49m in funding</p>",
+      "sourceCategory": "hyperscaler capex",
+      "sourceId": "datacenter-dynamics",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-27",
+      "title": "Digi Power X sued over noise from New York crypto mining site",
+      "url": "https://www.datacenterdynamics.com/en/news/digi-power-x-sued-over-noise-from-new-york-crypto-mining-site/",
+      "publisher": "Data Center Dynamics",
+      "publishedAt": "2026-06-19T16:30:26.000Z",
+      "summary": "<p data-block-key=\"1wwxq\">Residents have long been unhappy about noise of crypto site</p>",
+      "sourceCategory": "hyperscaler capex",
+      "sourceId": "datacenter-dynamics",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-28",
+      "title": "Plans filed for three-building data center campus in Northumberland, UK",
+      "url": "https://www.datacenterdynamics.com/en/news/plans-filed-for-three-building-data-center-campus-in-northumberland-uk/",
+      "publisher": "Data Center Dynamics",
+      "publishedAt": "2026-06-19T16:20:28.000Z",
+      "summary": "<p data-block-key=\"zi378\">Site to use natural gas-powered fuel cells for bridging power</p>",
+      "sourceCategory": "hyperscaler capex",
+      "sourceId": "datacenter-dynamics",
+      "quality": "media"
+    },
+    {
+      "id": "tw-2026-06-21-2250-source-29",
+      "title": "AT&T Business extends 400G wavelength to more than a dozen metros",
+      "url": "https://www.datacenterdynamics.com/en/news/att-business-extends-400g-wavelength-to-more-than-a-dozen-metros/",
+      "publisher": "Data Center Dynamics",
+      "publishedAt": "2026-06-19T16:00:25.000Z",
+      "summary": "<p data-block-key=\"x2jpi\">Those locations will now have access to AT&amp;T’s wavelength edgeless handoff capabilities</p>",
+      "sourceCategory": "hyperscaler capex",
+      "sourceId": "datacenter-dynamics",
+      "quality": "media"
+    }
+  ],
+  "disclaimer": "研究用途，不構成投資建議。"
+}

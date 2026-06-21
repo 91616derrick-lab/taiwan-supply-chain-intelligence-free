@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-06-21T14:30:00.000Z",
+  "runId": "tw-2026-06-21-2230",
+  "runType": "manual",
+  "engine": {
+    "mode": "rule_based",
+    "localAiEnabled": false,
+    "localAiModel": null
+  },
+  "systemStatus": {
+    "ok": true,
+    "sourceCount": 13,
+    "articleCount": 0,
+    "eventCount": 0,
+    "companyImpactCount": 0,
+    "errors": []
+  },
+  "executiveSummary": "Seed history placeholder. The first updater run will add a full timestamped history artifact.",
+  "events": [],
+  "companyImpacts": [],
+  "managerObservations": [],
+  "sources": [],
+  "disclaimer": "研究用途，不構成投資建議。"
+}
