@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-27T02:17:17.169Z",
-  "runId": "tw-2026-10-27-1017",
+  "generatedAt": "2026-10-27T18:33:07.381Z",
+  "runId": "tw-2026-10-28-0233",
   "runType": "morning",
   "engine": {
     "mode": "rule_based",
@@ -31,49 +31,49 @@
         "sourceId": "reuters-tech",
         "scope": "source_fetch",
         "message": "fetch failed",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       },
       {
         "sourceId": "tsmc-pr",
         "scope": "source_fetch",
         "message": "HTTP 403",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       },
       {
         "sourceId": "nvidia-news",
         "scope": "source_fetch",
         "message": "No parseable articles found",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       },
       {
         "sourceId": "eia-today",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       },
       {
         "sourceId": "trendforce",
         "scope": "source_fetch",
         "message": "HTTP 404",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       },
       {
         "sourceId": "amd-news",
         "scope": "source_fetch",
         "message": "The operation was aborted due to timeout",
-        "at": "2026-10-27T02:17:17.169Z"
+        "at": "2026-10-27T18:33:07.381Z"
       }
     ]
   },
   "executiveSummary": "本次情報以規則引擎整理公開來源，最高優先序主題為 SEMI EXPORT CONTROL、TSMC CAPEX、TSMC CAPEX。所有內容僅供研究與教育用途，不構成個人化投資建議。 本次有 6 個來源或本機 AI 警訊，已寫入 /doctor。",
   "events": [
     {
-      "id": "tw-2026-10-27-1017-event-01",
+      "id": "tw-2026-10-28-0233-event-01",
       "category": "SEMI_EXPORT_CONTROL",
       "title": "Semiconductor news source temporarily unavailable",
       "url": "https://feeds.reuters.com/reuters/technologyNews",
       "publisher": "Reuters",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 半導體、設備材料、先進製程、IC 設計 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "semiconductor",
@@ -253,13 +253,13 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-02",
+      "id": "tw-2026-10-28-0233-event-02",
       "category": "TSMC_CAPEX",
-      "title": "Silicon Carbide and Gallium Nitride Play Growing Role in Electronics Design, Manufacturing and Supply-Chain Strategy",
-      "url": "https://www.semiconductor-digest.com/silicon-carbide-and-gallium-nitride-play-growing-role-in-electronics-design-manufacturing-and-supply-chain-strategy/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=silicon-carbide-and-gallium-nitride-play-growing-role-in-electronics-design-manufacturing-and-supply-chain-strategy",
+      "title": "AMHS Is Not Just Factory Logistics",
+      "url": "https://www.semiconductor-digest.com/amhs-is-not-just-factory-logistics/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=amhs-is-not-just-factory-logistics",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T18:33:39.000Z",
-      "summary": "New research from the Global Electronics Association and Accuris launches a series examining technology trends shaping the electronics industry. The post Silicon Carbide and Gallium Nitride Play Growing Role in Electronics Design, Manufacturing and Supply-Chain Strategy appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:32:32.000Z",
+      "summary": "Automated material handling systems are usually treated as the fab’s logistics layer, moving lots between tools as quickly as possible. Dr. Moh Kolbehdari of Socionext America argues that view is becoming incomplete, because every wafer carrier holds material with a continuously developing manufacturing history. The post AMHS Is Not Just Factory Logistics appeared first on Semiconductor Digest .",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "affectedIndustries": [
@@ -439,13 +439,13 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-03",
+      "id": "tw-2026-10-28-0233-event-03",
       "category": "TSMC_CAPEX",
-      "title": "Cadence Unveils Domain-Specialized Maestro AI Models for Chip Design",
-      "url": "https://www.semiconductor-digest.com/cadence-unveils-domain-specialized-maestro-ai-models-for-chip-design/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=cadence-unveils-domain-specialized-maestro-ai-models-for-chip-design",
+      "title": "Wafer Fab Equipment: A Booming Market Built on a Fragmenting Supply Chain",
+      "url": "https://www.semiconductor-digest.com/wafer-fab-equipment-a-booming-market-built-on-a-fragmenting-supply-chain/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wafer-fab-equipment-a-booming-market-built-on-a-fragmenting-supply-chain",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T18:30:33.000Z",
-      "summary": "Cadence today announced the Maestro AI Model Portfolio, which powers Cadence AI Super Agents across semiconductor and system design workflows. The post Cadence Unveils Domain-Specialized Maestro AI Models for Chip Design appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:29:24.000Z",
+      "summary": "Wafer fab equipment revenue reached $129 billion in 2025 and is forecast to approach $220 billion by 2031, a 9% CAGR, according to Yole Group’s Status of the Wafer Fab Equipment Industry 2026 report. The post Wafer Fab Equipment: A Booming Market Built on a Fragmenting Supply Chain appeared first on Semiconductor Digest .",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "affectedIndustries": [
@@ -625,13 +625,13 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-04",
+      "id": "tw-2026-10-28-0233-event-04",
       "category": "TSMC_CAPEX",
-      "title": "From Fluid Handling to Dose Control: How Valve Technology Evolved from Process Component to Dose-Control Enabler",
-      "url": "https://www.semiconductor-digest.com/from-fluid-handling-to-dose-control-how-valve-technology-evolved-from-process-component-to-dose-control-enabler/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=from-fluid-handling-to-dose-control-how-valve-technology-evolved-from-process-component-to-dose-control-enabler",
+      "title": "Back-End Equipment: From Volume Assembly to a Strategic Advanced Packaging Ecosystem",
+      "url": "https://www.semiconductor-digest.com/back-end-equipment-from-volume-assembly-to-a-strategic-advanced-packaging-ecosystem/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=back-end-equipment-from-volume-assembly-to-a-strategic-advanced-packaging-ecosystem",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:38:43.000Z",
-      "summary": "As device architectures shrink and move into 3D, the process windows for atomic layer processes have narrowed to the point where valve performance has become a system-level concern. Jeff DeWitt of Swagelok traces how semiconductor fluid systems have evolved through three eras, purity, performance and precision, each driven by the industry’s most pressing process challenge at the time. The post From Fluid Handling to Dose Control: How Valve Technology Evolved from Process Component to Dose-Control Enabler appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:26:50.000Z",
+      "summary": "According to Yole Group’s Status of the Back-End Equipment Industry 2026 report, equipment revenue will grow from $8.1 billion in 2025 to $9.5 billion in 2026 and $10.6 billion in 2027. The post Back-End Equipment: From Volume Assembly to a Strategic Advanced Packaging Ecosystem appeared first on Semiconductor Digest .",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "affectedIndustries": [
@@ -811,13 +811,13 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-05",
+      "id": "tw-2026-10-28-0233-event-05",
       "category": "TSMC_CAPEX",
-      "title": "The High-Tech Workforce Has Changed, and Employers Need to Change With It",
-      "url": "https://www.semiconductor-digest.com/the-high-tech-workforce-has-changed-and-employers-need-to-change-with-it/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-high-tech-workforce-has-changed-and-employers-need-to-change-with-it",
+      "title": "From Wafers to Panels: Overcoming Lithography Challenges in Advanced Packaging",
+      "url": "https://www.semiconductor-digest.com/from-wafers-to-panels-overcoming-lithography-challenges-in-advanced-packaging/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=from-wafers-to-panels-overcoming-lithography-challenges-in-advanced-packaging",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:34:36.000Z",
-      "summary": "In a Show Daily interview, Tamara Ellestad, founder and CEO of VELO, a woman- and minority-owned staffing firm specializing in advanced manufacturing, says staffing has grown significantly over the last two years, and candidates with specialized skills such as tool installation now field multiple calls a day. The post The High-Tech Workforce Has Changed, and Employers Need to Change With It appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:04:55.000Z",
+      "summary": "Unlike front-end lithography, packaging lithography typically works at feature sizes around 1 µm, so overlay accuracy, throughput and thermal stability matter more than ever-smaller CDs, and those demands grow as substrates move from 300mm wafers to panels as large as 600 x 600mm. The post From Wafers to Panels: Overcoming Lithography Challenges in Advanced Packaging appeared first on Semiconductor Digest .",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "affectedIndustries": [
@@ -997,13 +997,13 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-06",
+      "id": "tw-2026-10-28-0233-event-06",
       "category": "TSMC_CAPEX",
-      "title": "Taking a Holistic Approach to Co-Packaged Optics Manufacturing",
-      "url": "https://www.semiconductor-digest.com/taking-a-holistic-approach-to-co-packaged-optics-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=taking-a-holistic-approach-to-co-packaged-optics-manufacturing",
+      "title": "Has AI Shifted the Sustainability Balance from Chip Design to Manufacturing?",
+      "url": "https://www.semiconductor-digest.com/has-ai-shifted-the-sustainability-balance-from-chip-design-to-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=has-ai-shifted-the-sustainability-balance-from-chip-design-to-manufacturing",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:31:48.000Z",
-      "summary": "As AI systems scale from individual processors to large clusters of accelerators, moving data between them has become a system-level challenge. Co-packaged optics (CPO) addresses it by integrating photonic devices in the same package as the processors or switch silicon they serve. The post Taking a Holistic Approach to Co-Packaged Optics Manufacturing appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:00:31.000Z",
+      "summary": "For decades, semiconductor sustainability was treated largely as a chip design problem: better performance per watt, specialized accelerators and smarter power management. With the AI build-out driving a wave of new fabs, John Blyler argues the burden is now shifting onto manufacturing. The post Has AI Shifted the Sustainability Balance from Chip Design to Manufacturing? appeared first on Semiconductor Digest .",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "affectedIndustries": [
@@ -1183,12 +1183,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-07",
+      "id": "tw-2026-10-28-0233-event-07",
       "category": "NVIDIA_SUPPLY_CHAIN",
       "title": "NVIDIA newsroom feed unavailable",
       "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
       "publisher": "NVIDIA",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 AI 晶片、先進封裝、伺服器代工、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Nvidia / AMD / Broadcom",
@@ -1369,12 +1369,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-08",
+      "id": "tw-2026-10-28-0233-event-08",
       "category": "NVIDIA_SUPPLY_CHAIN",
       "title": "AMD newsroom feed unavailable",
       "url": "https://www.amd.com/en/newsroom/rss.xml",
       "publisher": "AMD",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 AI 晶片、先進封裝、伺服器代工、PCB 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Nvidia / AMD / Broadcom",
@@ -1555,12 +1555,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-09",
+      "id": "tw-2026-10-28-0233-event-09",
       "category": "TSMC_CAPEX",
       "title": "TSMC press page metadata unavailable",
       "url": "https://pr.tsmc.com/english/news?type=press",
       "publisher": "TSMC",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 晶圓代工、半導體設備、材料、先進封裝 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
@@ -1741,12 +1741,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-10",
+      "id": "tw-2026-10-28-0233-event-10",
       "category": "TAIWAN_GEOPOLITICS",
       "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "url": "https://www.twse.com.tw/en/news/newsList",
       "publisher": "TWSE",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
       "whyItMatters": "此事件可能改變 半導體、航運、金融、出口供應鏈 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "Taiwan market / MOPS / TWSE",
@@ -1926,12 +1926,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-11",
+      "id": "tw-2026-10-28-0233-event-11",
       "category": "FED_RATE",
       "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2111,12 +2111,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-12",
+      "id": "tw-2026-10-28-0233-event-12",
       "category": "FED_RATE",
       "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2296,12 +2296,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-13",
+      "id": "tw-2026-10-28-0233-event-13",
       "category": "FED_RATE",
       "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2481,12 +2481,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-14",
+      "id": "tw-2026-10-28-0233-event-14",
       "category": "FED_RATE",
       "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2666,12 +2666,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-15",
+      "id": "tw-2026-10-28-0233-event-15",
       "category": "FED_RATE",
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "whyItMatters": "此事件可能改變 金融、出口公司、高估值成長股、資本設備 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "macro / Fed / rates / FX",
@@ -2851,12 +2851,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-16",
+      "id": "tw-2026-10-28-0233-event-16",
       "category": "TRADE_TARIFF",
       "title": "Press Releases",
       "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
       "publisher": "USTR",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
       "whyItMatters": "此事件可能改變 出口供應鏈、硬體組裝、航運、中國曝險 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "geopolitics / trade policy",
@@ -3036,12 +3036,12 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-17",
+      "id": "tw-2026-10-28-0233-event-17",
       "category": "DATA_CENTER_POWER",
       "title": "EIA energy feed unavailable",
       "url": "https://www.eia.gov/todayinenergy/rss.php",
       "publisher": "U.S. Energy Information Administration",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "whyItMatters": "此事件可能改變 電源供應、散熱、電網設備、資料中心基礎建設 的訂單、成本或風險溢價，需用公司公告與後續數據驗證。",
       "sourceCategory": "energy",
@@ -3222,7 +3222,7 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-18",
+      "id": "tw-2026-10-28-0233-event-18",
       "category": "SHIPPING_DISRUPTION",
       "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
@@ -3407,7 +3407,7 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-19",
+      "id": "tw-2026-10-28-0233-event-19",
       "category": "SHIPPING_DISRUPTION",
       "title": "Why the Northeast is quietly running out of diesel",
       "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
@@ -3592,7 +3592,7 @@
       ]
     },
     {
-      "id": "tw-2026-10-27-1017-event-20",
+      "id": "tw-2026-10-28-0233-event-20",
       "category": "SHIPPING_DISRUPTION",
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
@@ -3797,22 +3797,22 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-09",
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-09",
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": [
         "TSMC_CAPEX",
@@ -3840,13 +3840,13 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3869,13 +3869,13 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3898,16 +3898,16 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-09",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-09",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -3934,15 +3934,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-09",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-09",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -3969,12 +3969,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -3997,12 +3997,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4025,12 +4025,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4053,12 +4053,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4081,12 +4081,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4109,12 +4109,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4137,12 +4137,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-09"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-09"
       ],
       "sensitivityTags": []
     },
@@ -4165,15 +4165,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-09",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-09",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "DATA_CENTER_POWER",
@@ -4200,15 +4200,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-02",
-        "tw-2026-10-27-1017-event-03",
-        "tw-2026-10-27-1017-event-04",
-        "tw-2026-10-27-1017-event-05",
-        "tw-2026-10-27-1017-event-06",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-09",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-02",
+        "tw-2026-10-28-0233-event-03",
+        "tw-2026-10-28-0233-event-04",
+        "tw-2026-10-28-0233-event-05",
+        "tw-2026-10-28-0233-event-06",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-09",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4234,16 +4234,16 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4269,14 +4269,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": []
     },
@@ -4299,15 +4299,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4334,14 +4334,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4368,14 +4368,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4402,15 +4402,15 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4437,12 +4437,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": [
         "FED_RATE",
@@ -4469,12 +4469,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4497,12 +4497,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4525,11 +4525,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4552,11 +4552,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4579,11 +4579,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15"
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15"
       ],
       "sensitivityTags": []
     },
@@ -4606,12 +4606,12 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-11",
-        "tw-2026-10-27-1017-event-12",
-        "tw-2026-10-27-1017-event-13",
-        "tw-2026-10-27-1017-event-14",
-        "tw-2026-10-27-1017-event-15",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-11",
+        "tw-2026-10-28-0233-event-12",
+        "tw-2026-10-28-0233-event-13",
+        "tw-2026-10-28-0233-event-14",
+        "tw-2026-10-28-0233-event-15",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": []
     },
@@ -4634,10 +4634,10 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4664,9 +4664,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08",
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08",
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4692,8 +4692,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4719,8 +4719,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-07",
-        "tw-2026-10-27-1017-event-08"
+        "tw-2026-10-28-0233-event-07",
+        "tw-2026-10-28-0233-event-08"
       ],
       "sensitivityTags": [
         "AI_SERVER_DEMAND",
@@ -4746,11 +4746,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-16",
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-16",
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4777,11 +4777,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-16",
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-16",
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4808,11 +4808,11 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-16",
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-16",
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": [
         "SHIPPING_DISRUPTION",
@@ -4839,10 +4839,10 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -4865,7 +4865,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4888,7 +4888,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4911,7 +4911,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4934,7 +4934,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4957,7 +4957,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -4980,7 +4980,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -5003,7 +5003,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-17"
+        "tw-2026-10-28-0233-event-17"
       ],
       "sensitivityTags": []
     },
@@ -5026,9 +5026,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-10",
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-10",
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": []
     },
@@ -5051,7 +5051,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01"
+        "tw-2026-10-28-0233-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5074,7 +5074,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01"
+        "tw-2026-10-28-0233-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5097,7 +5097,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01"
+        "tw-2026-10-28-0233-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5120,7 +5120,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01"
+        "tw-2026-10-28-0233-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5143,7 +5143,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01"
+        "tw-2026-10-28-0233-event-01"
       ],
       "sensitivityTags": []
     },
@@ -5166,8 +5166,8 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-01",
-        "tw-2026-10-27-1017-event-10"
+        "tw-2026-10-28-0233-event-01",
+        "tw-2026-10-28-0233-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5190,7 +5190,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10"
+        "tw-2026-10-28-0233-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5213,7 +5213,7 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-10"
+        "tw-2026-10-28-0233-event-10"
       ],
       "sensitivityTags": []
     },
@@ -5236,9 +5236,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5261,9 +5261,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5286,9 +5286,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5311,9 +5311,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5336,9 +5336,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5361,9 +5361,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5386,9 +5386,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5411,9 +5411,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5436,9 +5436,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5461,9 +5461,9 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-18",
-        "tw-2026-10-27-1017-event-19",
-        "tw-2026-10-27-1017-event-20"
+        "tw-2026-10-28-0233-event-18",
+        "tw-2026-10-28-0233-event-19",
+        "tw-2026-10-28-0233-event-20"
       ],
       "sensitivityTags": []
     },
@@ -5486,14 +5486,14 @@
         "規則引擎不代表個人化投資建議"
       ],
       "relatedEventIds": [
-        "tw-2026-10-27-1017-event-16"
+        "tw-2026-10-28-0233-event-16"
       ],
       "sensitivityTags": []
     }
   ],
   "managerObservations": [
     {
-      "eventId": "tw-2026-10-27-1017-event-01",
+      "eventId": "tw-2026-10-28-0233-event-01",
       "eventTitle": "Semiconductor news source temporarily unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 半導體、設備材料、先進製程。台灣相關分數 90/100，代表它可能牽動 台積電 2330、聯發科 2454、世芯-KY 3661、創意 3443、家登 3680，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5526,8 +5526,8 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-02",
-      "eventTitle": "Silicon Carbide and Gallium Nitride Play Growing Role in Electronics Design, Manufacturing and Supply-Chain Strategy",
+      "eventId": "tw-2026-10-28-0233-event-02",
+      "eventTitle": "AMHS Is Not Just Factory Logistics",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
       "bullCase": "如果後續資料證明需求真的增加，新廠建置、EUV 與製程支援、無塵室工程 的公司可能受惠。",
@@ -5559,8 +5559,8 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-03",
-      "eventTitle": "Cadence Unveils Domain-Specialized Maestro AI Models for Chip Design",
+      "eventId": "tw-2026-10-28-0233-event-03",
+      "eventTitle": "Wafer Fab Equipment: A Booming Market Built on a Fragmenting Supply Chain",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
       "bullCase": "如果後續資料證明需求真的增加，新廠建置、EUV 與製程支援、無塵室工程 的公司可能受惠。",
@@ -5592,8 +5592,8 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-04",
-      "eventTitle": "From Fluid Handling to Dose Control: How Valve Technology Evolved from Process Component to Dose-Control Enabler",
+      "eventId": "tw-2026-10-28-0233-event-04",
+      "eventTitle": "Back-End Equipment: From Volume Assembly to a Strategic Advanced Packaging Ecosystem",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
       "bullCase": "如果後續資料證明需求真的增加，新廠建置、EUV 與製程支援、無塵室工程 的公司可能受惠。",
@@ -5625,8 +5625,8 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-05",
-      "eventTitle": "The High-Tech Workforce Has Changed, and Employers Need to Change With It",
+      "eventId": "tw-2026-10-28-0233-event-05",
+      "eventTitle": "From Wafers to Panels: Overcoming Lithography Challenges in Advanced Packaging",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
       "bullCase": "如果後續資料證明需求真的增加，新廠建置、EUV 與製程支援、無塵室工程 的公司可能受惠。",
@@ -5658,8 +5658,8 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-06",
-      "eventTitle": "Taking a Holistic Approach to Co-Packaged Optics Manufacturing",
+      "eventId": "tw-2026-10-28-0233-event-06",
+      "eventTitle": "Has AI Shifted the Sustainability Balance from Chip Design to Manufacturing?",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
       "bullCase": "如果後續資料證明需求真的增加，新廠建置、EUV 與製程支援、無塵室工程 的公司可能受惠。",
@@ -5691,7 +5691,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-07",
+      "eventId": "tw-2026-10-28-0233-event-07",
       "eventTitle": "NVIDIA newsroom feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 AI 晶片、先進封裝、伺服器代工。台灣相關分數 94/100，代表它可能牽動 台積電 2330、廣達 2382、緯創 3231、緯穎 6669、台光電 2383，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5724,7 +5724,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-08",
+      "eventId": "tw-2026-10-28-0233-event-08",
       "eventTitle": "AMD newsroom feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 AI 晶片、先進封裝、伺服器代工。台灣相關分數 94/100，代表它可能牽動 台積電 2330、廣達 2382、緯創 3231、緯穎 6669、台光電 2383，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5757,7 +5757,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-09",
+      "eventId": "tw-2026-10-28-0233-event-09",
       "eventTitle": "TSMC press page metadata unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 晶圓代工、半導體設備、材料。台灣相關分數 98/100，代表它可能牽動 台積電 2330、欣興 3037、環球晶 6488、家登 3680、帆宣 6196，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5790,7 +5790,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-10",
+      "eventId": "tw-2026-10-28-0233-event-10",
       "eventTitle": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 半導體、航運、金融。台灣相關分數 99/100，代表它可能牽動 台積電 2330、長榮 2603、陽明 2609、國泰金 2882、聯電 2303，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5823,7 +5823,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-11",
+      "eventId": "tw-2026-10-28-0233-event-11",
       "eventTitle": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5856,7 +5856,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-12",
+      "eventId": "tw-2026-10-28-0233-event-12",
       "eventTitle": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5889,7 +5889,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-13",
+      "eventId": "tw-2026-10-28-0233-event-13",
       "eventTitle": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5922,7 +5922,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-14",
+      "eventId": "tw-2026-10-28-0233-event-14",
       "eventTitle": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5955,7 +5955,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-15",
+      "eventId": "tw-2026-10-28-0233-event-15",
       "eventTitle": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 金融、出口公司、高估值成長股。台灣相關分數 64/100，代表它可能牽動 國泰金 2882、台積電 2330、廣達 2382、富邦金 2881、中信金 2891，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -5988,7 +5988,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-16",
+      "eventId": "tw-2026-10-28-0233-event-16",
       "eventTitle": "Press Releases",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 出口供應鏈、硬體組裝、航運。台灣相關分數 78/100，代表它可能牽動 鴻海 2317、廣達 2382、緯創 3231、長榮 2603、陽明 2609，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6021,7 +6021,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-17",
+      "eventId": "tw-2026-10-28-0233-event-17",
       "eventTitle": "EIA energy feed unavailable",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 電源供應、散熱、電網設備。台灣相關分數 86/100，代表它可能牽動 台達電 2308、奇鋐 3017、雙鴻 3324、智邦 2345、康舒 6282，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6054,7 +6054,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-18",
+      "eventId": "tw-2026-10-28-0233-event-18",
       "eventTitle": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6087,7 +6087,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-19",
+      "eventId": "tw-2026-10-28-0233-event-19",
       "eventTitle": "Why the Northeast is quietly running out of diesel",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6120,7 +6120,7 @@
       ]
     },
     {
-      "eventId": "tw-2026-10-27-1017-event-20",
+      "eventId": "tw-2026-10-28-0233-event-20",
       "eventTitle": "Exclusive: Central Freight Lines to shut down after 96 years",
       "engine": "rule_based",
       "managerView": "規則引擎推論：這件事目前最值得追蹤的是 貨櫃航運、物流、出口供應鏈。台灣相關分數 74/100，代表它可能牽動 長榮 2603、陽明 2609、萬海 2615、華航 2610、長榮航 2618，但仍需要用公司營收、法說會和訂單訊號確認。",
@@ -6155,194 +6155,194 @@
   ],
   "sources": [
     {
-      "id": "tw-2026-10-27-1017-source-01",
+      "id": "tw-2026-10-28-0233-source-01",
       "title": "Semiconductor news source temporarily unavailable",
       "url": "https://feeds.reuters.com/reuters/technologyNews",
       "publisher": "Reuters",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Reuters technology feed could not be parsed. Keep monitoring chip demand, export controls, and supplier commentary through primary filings. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "semiconductor",
       "sourceId": "reuters-tech",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-02",
-      "title": "Silicon Carbide and Gallium Nitride Play Growing Role in Electronics Design, Manufacturing and Supply-Chain Strategy",
-      "url": "https://www.semiconductor-digest.com/silicon-carbide-and-gallium-nitride-play-growing-role-in-electronics-design-manufacturing-and-supply-chain-strategy/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=silicon-carbide-and-gallium-nitride-play-growing-role-in-electronics-design-manufacturing-and-supply-chain-strategy",
+      "id": "tw-2026-10-28-0233-source-02",
+      "title": "AMHS Is Not Just Factory Logistics",
+      "url": "https://www.semiconductor-digest.com/amhs-is-not-just-factory-logistics/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=amhs-is-not-just-factory-logistics",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T18:33:39.000Z",
-      "summary": "New research from the Global Electronics Association and Accuris launches a series examining technology trends shaping the electronics industry. The post Silicon Carbide and Gallium Nitride Play Growing Role in Electronics Design, Manufacturing and Supply-Chain Strategy appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:32:32.000Z",
+      "summary": "Automated material handling systems are usually treated as the fab’s logistics layer, moving lots between tools as quickly as possible. Dr. Moh Kolbehdari of Socionext America argues that view is becoming incomplete, because every wafer carrier holds material with a continuously developing manufacturing history. The post AMHS Is Not Just Factory Logistics appeared first on Semiconductor Digest .",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "semiconductor-digest",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-03",
-      "title": "Cadence Unveils Domain-Specialized Maestro AI Models for Chip Design",
-      "url": "https://www.semiconductor-digest.com/cadence-unveils-domain-specialized-maestro-ai-models-for-chip-design/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=cadence-unveils-domain-specialized-maestro-ai-models-for-chip-design",
+      "id": "tw-2026-10-28-0233-source-03",
+      "title": "Wafer Fab Equipment: A Booming Market Built on a Fragmenting Supply Chain",
+      "url": "https://www.semiconductor-digest.com/wafer-fab-equipment-a-booming-market-built-on-a-fragmenting-supply-chain/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wafer-fab-equipment-a-booming-market-built-on-a-fragmenting-supply-chain",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T18:30:33.000Z",
-      "summary": "Cadence today announced the Maestro AI Model Portfolio, which powers Cadence AI Super Agents across semiconductor and system design workflows. The post Cadence Unveils Domain-Specialized Maestro AI Models for Chip Design appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:29:24.000Z",
+      "summary": "Wafer fab equipment revenue reached $129 billion in 2025 and is forecast to approach $220 billion by 2031, a 9% CAGR, according to Yole Group’s Status of the Wafer Fab Equipment Industry 2026 report. The post Wafer Fab Equipment: A Booming Market Built on a Fragmenting Supply Chain appeared first on Semiconductor Digest .",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "semiconductor-digest",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-04",
-      "title": "From Fluid Handling to Dose Control: How Valve Technology Evolved from Process Component to Dose-Control Enabler",
-      "url": "https://www.semiconductor-digest.com/from-fluid-handling-to-dose-control-how-valve-technology-evolved-from-process-component-to-dose-control-enabler/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=from-fluid-handling-to-dose-control-how-valve-technology-evolved-from-process-component-to-dose-control-enabler",
+      "id": "tw-2026-10-28-0233-source-04",
+      "title": "Back-End Equipment: From Volume Assembly to a Strategic Advanced Packaging Ecosystem",
+      "url": "https://www.semiconductor-digest.com/back-end-equipment-from-volume-assembly-to-a-strategic-advanced-packaging-ecosystem/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=back-end-equipment-from-volume-assembly-to-a-strategic-advanced-packaging-ecosystem",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:38:43.000Z",
-      "summary": "As device architectures shrink and move into 3D, the process windows for atomic layer processes have narrowed to the point where valve performance has become a system-level concern. Jeff DeWitt of Swagelok traces how semiconductor fluid systems have evolved through three eras, purity, performance and precision, each driven by the industry’s most pressing process challenge at the time. The post From Fluid Handling to Dose Control: How Valve Technology Evolved from Process Component to Dose-Control Enabler appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:26:50.000Z",
+      "summary": "According to Yole Group’s Status of the Back-End Equipment Industry 2026 report, equipment revenue will grow from $8.1 billion in 2025 to $9.5 billion in 2026 and $10.6 billion in 2027. The post Back-End Equipment: From Volume Assembly to a Strategic Advanced Packaging Ecosystem appeared first on Semiconductor Digest .",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "semiconductor-digest",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-05",
-      "title": "The High-Tech Workforce Has Changed, and Employers Need to Change With It",
-      "url": "https://www.semiconductor-digest.com/the-high-tech-workforce-has-changed-and-employers-need-to-change-with-it/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-high-tech-workforce-has-changed-and-employers-need-to-change-with-it",
+      "id": "tw-2026-10-28-0233-source-05",
+      "title": "From Wafers to Panels: Overcoming Lithography Challenges in Advanced Packaging",
+      "url": "https://www.semiconductor-digest.com/from-wafers-to-panels-overcoming-lithography-challenges-in-advanced-packaging/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=from-wafers-to-panels-overcoming-lithography-challenges-in-advanced-packaging",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:34:36.000Z",
-      "summary": "In a Show Daily interview, Tamara Ellestad, founder and CEO of VELO, a woman- and minority-owned staffing firm specializing in advanced manufacturing, says staffing has grown significantly over the last two years, and candidates with specialized skills such as tool installation now field multiple calls a day. The post The High-Tech Workforce Has Changed, and Employers Need to Change With It appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:04:55.000Z",
+      "summary": "Unlike front-end lithography, packaging lithography typically works at feature sizes around 1 µm, so overlay accuracy, throughput and thermal stability matter more than ever-smaller CDs, and those demands grow as substrates move from 300mm wafers to panels as large as 600 x 600mm. The post From Wafers to Panels: Overcoming Lithography Challenges in Advanced Packaging appeared first on Semiconductor Digest .",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "semiconductor-digest",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-06",
-      "title": "Taking a Holistic Approach to Co-Packaged Optics Manufacturing",
-      "url": "https://www.semiconductor-digest.com/taking-a-holistic-approach-to-co-packaged-optics-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=taking-a-holistic-approach-to-co-packaged-optics-manufacturing",
+      "id": "tw-2026-10-28-0233-source-06",
+      "title": "Has AI Shifted the Sustainability Balance from Chip Design to Manufacturing?",
+      "url": "https://www.semiconductor-digest.com/has-ai-shifted-the-sustainability-balance-from-chip-design-to-manufacturing/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=has-ai-shifted-the-sustainability-balance-from-chip-design-to-manufacturing",
       "publisher": "Semiconductor Digest",
-      "publishedAt": "2026-10-26T13:31:48.000Z",
-      "summary": "As AI systems scale from individual processors to large clusters of accelerators, moving data between them has become a system-level challenge. Co-packaged optics (CPO) addresses it by integrating photonic devices in the same package as the processors or switch silicon they serve. The post Taking a Holistic Approach to Co-Packaged Optics Manufacturing appeared first on Semiconductor Digest .",
+      "publishedAt": "2026-10-27T14:00:31.000Z",
+      "summary": "For decades, semiconductor sustainability was treated largely as a chip design problem: better performance per watt, specialized accelerators and smarter power management. With the AI build-out driving a wave of new fabs, John Blyler argues the burden is now shifting onto manufacturing. The post Has AI Shifted the Sustainability Balance from Chip Design to Manufacturing? appeared first on Semiconductor Digest .",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "semiconductor-digest",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-07",
+      "id": "tw-2026-10-28-0233-source-07",
       "title": "NVIDIA newsroom feed unavailable",
       "url": "https://nvidianews.nvidia.com/news?pagetemplate=rss",
       "publisher": "NVIDIA",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "NVIDIA primary feed could not be parsed. Watch accelerator launches, networking updates, and supply-chain references. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "Nvidia / AMD / Broadcom",
       "sourceId": "nvidia-news",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-08",
+      "id": "tw-2026-10-28-0233-source-08",
       "title": "AMD newsroom feed unavailable",
       "url": "https://www.amd.com/en/newsroom/rss.xml",
       "publisher": "AMD",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "AMD primary feed could not be parsed. Monitor AI accelerator cadence, hyperscaler adoption, and server CPU demand. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "Nvidia / AMD / Broadcom",
       "sourceId": "amd-news",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-09",
+      "id": "tw-2026-10-28-0233-source-09",
       "title": "TSMC press page metadata unavailable",
       "url": "https://pr.tsmc.com/english/news?type=press",
       "publisher": "TSMC",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "TSMC press page metadata could not be retrieved. Check official monthly revenue, investor materials, and capex commentary. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "TSMC / ASML / semiconductor equipment",
       "sourceId": "tsmc-pr",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-10",
+      "id": "tw-2026-10-28-0233-source-10",
       "title": "TWSE Press Release - Taiwan Stock Exchange Corporation",
       "url": "https://www.twse.com.tw/en/news/newsList",
       "publisher": "TWSE",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "TWSE public page could not be parsed. Use MOPS and TWSE announcements to confirm exchange-level changes.",
       "sourceCategory": "Taiwan market / MOPS / TWSE",
       "sourceId": "twse-news",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-11",
+      "id": "tw-2026-10-28-0233-source-11",
       "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-12",
+      "id": "tw-2026-10-28-0233-source-12",
       "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-13",
+      "id": "tw-2026-10-28-0233-source-13",
       "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-14",
+      "id": "tw-2026-10-28-0233-source-14",
       "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-15",
+      "id": "tw-2026-10-28-0233-source-15",
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "publisher": "Federal Reserve",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "sourceCategory": "macro / Fed / rates / FX",
       "sourceId": "fed-rss",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-16",
+      "id": "tw-2026-10-28-0233-source-16",
       "title": "Press Releases",
       "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
       "publisher": "USTR",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Press releases are added to the USTR website as they are released. See the most current updates below, and check back on a regular basis for USTR news.",
       "sourceCategory": "geopolitics / trade policy",
       "sourceId": "ustr-press",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-17",
+      "id": "tw-2026-10-28-0233-source-17",
       "title": "EIA energy feed unavailable",
       "url": "https://www.eia.gov/todayinenergy/rss.php",
       "publisher": "U.S. Energy Information Administration",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "EIA feed could not be parsed. Monitor energy prices and power availability for data-center and manufacturing cost pressure. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "energy",
       "sourceId": "eia-today",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-18",
+      "id": "tw-2026-10-28-0233-source-18",
       "title": "The &#8216;ingenious strategy&#8217; behind most truckers&#8217; least favorite week of the year: International Roadcheck",
       "url": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
       "publisher": "FreightWaves",
@@ -6353,7 +6353,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-19",
+      "id": "tw-2026-10-28-0233-source-19",
       "title": "Why the Northeast is quietly running out of diesel",
       "url": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
       "publisher": "FreightWaves",
@@ -6364,7 +6364,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-20",
+      "id": "tw-2026-10-28-0233-source-20",
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "url": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
       "publisher": "FreightWaves",
@@ -6375,7 +6375,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-21",
+      "id": "tw-2026-10-28-0233-source-21",
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "url": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
       "publisher": "FreightWaves",
@@ -6386,7 +6386,7 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-22",
+      "id": "tw-2026-10-28-0233-source-22",
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "url": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
       "publisher": "FreightWaves",
@@ -6397,78 +6397,78 @@
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-23",
+      "id": "tw-2026-10-28-0233-source-23",
       "title": "Memory market feed unavailable",
       "url": "https://www.trendforce.com/presscenter/rss",
       "publisher": "TrendForce",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "Memory market RSS could not be parsed. Track HBM pricing, DRAM cycle, and server memory demand through supplier reports. This fallback exists so the workflow can produce diagnostics instead of failing silently.",
       "sourceCategory": "memory / HBM / DRAM",
       "sourceId": "trendforce",
       "quality": "fallback"
     },
     {
-      "id": "tw-2026-10-27-1017-source-24",
+      "id": "tw-2026-10-28-0233-source-24",
       "title": "MOPS metadata unavailable",
       "url": "https://mops.twse.com.tw/mops/web/index",
       "publisher": "MOPS",
-      "publishedAt": "2026-10-27T02:17:17.169Z",
+      "publishedAt": "2026-10-27T18:33:07.381Z",
       "summary": "MOPS public website metadata could not be parsed. Company material information remains the primary verification source.",
       "sourceCategory": "company IR / press release",
       "sourceId": "mops",
       "quality": "official"
     },
     {
-      "id": "tw-2026-10-27-1017-source-25",
-      "title": "Ecoblox partners with Rimac on modular data center solution",
-      "url": "https://www.datacenterdynamics.com/en/news/ecoblox-partners-with-rimac-on-modular-data-center-solution/",
+      "id": "tw-2026-10-28-0233-source-25",
+      "title": "Oracle will offer Google’s TPU AI chip via OCI",
+      "url": "https://www.datacenterdynamics.com/en/news/oracle-will-offer-googles-tpu-ai-chip-via-oci/",
       "publisher": "Data Center Dynamics",
-      "publishedAt": "2026-10-26T17:30:24.000Z",
-      "summary": "<p data-block-key=\"jlran\">First deployment slated for Rimac's campus in Kerestinec, Croatia</p>",
+      "publishedAt": "2026-10-27T17:57:17.000Z",
+      "summary": "<p data-block-key=\"4hhz1\">Will be the first hyperscaler to offer Google’s TPU outside of Google</p>",
       "sourceCategory": "hyperscaler capex",
       "sourceId": "datacenter-dynamics",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-26",
-      "title": "Cadence unveils Nvidia-powered AI data center in Munich, Germany",
-      "url": "https://www.datacenterdynamics.com/en/news/cadence-unveils-nvidia-powered-ai-data-center-in-munich-germany/",
+      "id": "tw-2026-10-28-0233-source-26",
+      "title": "Amazon settles legal battle against AWS managers accused of data center deal kickbacks",
+      "url": "https://www.datacenterdynamics.com/en/news/amazon-settles-legal-battle-against-aws-managers-accused-of-data-center-deal-kickbacks/",
       "publisher": "Data Center Dynamics",
-      "publishedAt": "2026-10-26T17:17:15.000Z",
-      "summary": "<p data-block-key=\"7ujoa\">Facility will support electronic design automation (EDA), simulation, and offer sovereign AI cloud services</p>",
+      "publishedAt": "2026-10-27T17:17:49.000Z",
+      "summary": "<p data-block-key=\"7wqh1\">The long-running case will continue with Northstar Commercial Partners as defendant</p>",
       "sourceCategory": "hyperscaler capex",
       "sourceId": "datacenter-dynamics",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-27",
-      "title": "Verizon signs $2bn AWS AI infrastructure deal",
-      "url": "https://www.datacenterdynamics.com/en/news/verizon-signs-2bn-aws-ai-infrastructure-deal/",
+      "id": "tw-2026-10-28-0233-source-27",
+      "title": "La Caisse snaps up 49.9% stake in Bell Canada's tower unit",
+      "url": "https://www.datacenterdynamics.com/en/news/la-caisse-snaps-up-499-stake-in-bell-canadas-tower-unit/",
       "publisher": "Data Center Dynamics",
-      "publishedAt": "2026-10-26T17:10:55.000Z",
-      "summary": "<p data-block-key=\"8pgpl\">As carrier posts strong Q3 earnings</p>",
+      "publishedAt": "2026-10-27T17:08:55.000Z",
+      "summary": "<p data-block-key=\"tlbd5\">Raises CAD$2.45bn for newly-formed tower business</p>",
       "sourceCategory": "hyperscaler capex",
       "sourceId": "datacenter-dynamics",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-28",
-      "title": "Sponsored: The next evolution of data center backup power",
-      "url": "https://www.datacenterdynamics.com/en/opinions/the-next-evolution-of-data-center-backup-power/",
+      "id": "tw-2026-10-28-0233-source-28",
+      "title": "Ferveret's in-rack immersion cooling deployed on HPC infrastructure at MIT",
+      "url": "https://www.datacenterdynamics.com/en/news/ferverets-in-rack-immersion-cooling-deployed-on-hpc-infrastructure-at-mit/",
       "publisher": "Data Center Dynamics",
-      "publishedAt": "2026-10-26T17:05:00.000Z",
-      "summary": "<p data-block-key=\"n6x8w\">Building flexibility from the engine up </p>",
+      "publishedAt": "2026-10-27T17:02:59.000Z",
+      "summary": "<p data-block-key=\"16gov\">Can unlock up to 35 percent additional compute capacity, firm claims</p>",
       "sourceCategory": "hyperscaler capex",
       "sourceId": "datacenter-dynamics",
       "quality": "media"
     },
     {
-      "id": "tw-2026-10-27-1017-source-29",
-      "title": "Anthropic files S-1 for IPO, with $417bn in compute commitments",
-      "url": "https://www.datacenterdynamics.com/en/news/anthropic-files-s-1-for-ipo-with-417bn-in-compute-commitments/",
+      "id": "tw-2026-10-28-0233-source-29",
+      "title": "Comms tower collapses in Danville, Illinois, after farming machinery catches guy wire",
+      "url": "https://www.datacenterdynamics.com/en/news/comms-tower-collapses-in-danville-illinois-after-farming-machinery-catches-guy-wire/",
       "publisher": "Data Center Dynamics",
-      "publishedAt": "2026-10-26T16:45:52.000Z",
-      "summary": "<p data-block-key=\"k5ybu\">Data center costs spread over the next 20 years</p>",
+      "publishedAt": "2026-10-27T16:47:14.000Z",
+      "summary": "<p data-block-key=\"8jzkg\">No injuries reported</p>",
       "sourceCategory": "hyperscaler capex",
       "sourceId": "datacenter-dynamics",
       "quality": "media"
